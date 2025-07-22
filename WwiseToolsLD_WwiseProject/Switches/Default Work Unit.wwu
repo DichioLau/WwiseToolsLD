@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1D273620-E8B3-4505-BDC4-6811675E2817}" SchemaVersion="123">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{1D273620-E8B3-4505-BDC4-6811675E2817}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1D273620-E8B3-4505-BDC4-6811675E2817}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{5EE68EEE-6EDB-4686-834B-C29997A64B40}" ShortID="439480633">
+					<ChildrenList>
+						<SwitchGroup Name="Music" ID="{85CB16AD-7BBD-43DE-A2B3-91C27C360891}">
+							<ChildrenList>
+								<Switch Name="Layer_01" ID="{7BA7AD59-66F1-4B51-A677-805DD3B3C0B2}"/>
+								<Switch Name="Layer_02" ID="{8524CDF3-30AD-44EE-A20C-2BFF6C597D17}"/>
+								<Switch Name="Layer_03" ID="{424A665D-9100-4A3C-BADD-99431C63C895}"/>
+								<Switch Name="Layer_04" ID="{56348E91-1626-46EE-9B1A-684C5FEF84E1}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

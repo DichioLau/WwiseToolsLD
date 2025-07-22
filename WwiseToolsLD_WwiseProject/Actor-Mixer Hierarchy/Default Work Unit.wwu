@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{88214CCD-EEE7-43F7-873A-AA2467AECD54}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{88214CCD-EEE7-43F7-873A-AA2467AECD54}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{88214CCD-EEE7-43F7-873A-AA2467AECD54}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="New Random Container" ID="{92305F31-43A3-4B5B-B43A-5BB91DB1A3A0}" ShortID="27929057">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BE05EF9-E1EF-4783-AA57-53F854708710}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{930AC8CF-71D3-4547-986B-3750B6971EFC}"/>
+						</Reference>
+					</ReferenceList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

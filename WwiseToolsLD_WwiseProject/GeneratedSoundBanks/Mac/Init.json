@@ -1,7 +1,7 @@
 {
  "SoundBanksInfo": {
-  "Platform": "Windows",
-  "BasePlatform": "Windows",
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
   "SchemaVersion": "16",
   "SoundBankVersion": "154",
   "SoundBanks": [
@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E8C73C05-9AC5-A17E-EA11-491BBCB2A45E}",
+    "Hash": "{89C218AE-9E0B-8562-B379-0ABAC724E516}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -78,6 +78,6 @@
     ]
    }
   ],
-  "FileHash": "{E8CDB3F8-1CC0-CB61-7D3A-3D271082B431}"
+  "FileHash": "{84EA3237-A8DE-676A-0C3C-FB2C96A29644}"
  }
 }
