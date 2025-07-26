@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e78fcc535b673f49baa57ef4b894424, type: 3}
+  m_Name: 30D4BCA9-02E2-49EC-9E58-610CAFE88BEF
+  m_EditorClassIdentifier: 
+  objectName: Set_Switch_Layer_04
+  id: 3925293207
+  guid: 30D4BCA9-02E2-49EC-9E58-610CAFE88BEF
+  IsInUserDefinedSoundBank: 1

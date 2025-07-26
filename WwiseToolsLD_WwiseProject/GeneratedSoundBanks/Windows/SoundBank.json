@@ -10,12 +10,452 @@
     "Type": "User",
     "GUID": "{8AB65D46-CFEB-4ABF-B717-D84D390B748C}",
     "Language": "SFX",
-    "Hash": "{2FBC8024-57A4-82FB-29C5-1BE131D174A5}",
+    "Hash": "{8EF6946F-5D81-4682-59C7-13328AC2ED08}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank",
     "ShortName": "SoundBank",
-    "Path": "SoundBank.bnk"
+    "Path": "SoundBank.bnk",
+    "Media": [
+     {
+      "Id": "131473197",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_synth_02.wav",
+      "CachePath": "61/{619A687A-BA3A-FCD6-6D0E-49E786CEA064}.wem"
+     },
+     {
+      "Id": "209230691",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_WID_Numers-004.wav",
+      "CachePath": "ED/{EDDF31A3-CA28-AD7F-C812-B3B54E28A92F}.wem"
+     },
+     {
+      "Id": "224358471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_samba_perc_02.wav",
+      "CachePath": "AA/{AA2B3BC1-7F67-9DF3-34C2-E9080CD7E243}.wem"
+     },
+     {
+      "Id": "228152782",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_synth_01.wav",
+      "CachePath": "B7/{B7B0A6EF-AEB8-B6C1-34B7-1053FD877724}.wem"
+     },
+     {
+      "Id": "268302885",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_bells_01.wav",
+      "CachePath": "0E/{0EF0F4E4-4839-CA56-8897-4AB525291C73}.wem"
+     },
+     {
+      "Id": "700173175",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_samba_perc_04.wav",
+      "CachePath": "D5/{D5BD3C8B-7C1E-8E86-17BB-DF405825595D}.wem"
+     },
+     {
+      "Id": "802669513",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_WID_Numers-002.wav",
+      "CachePath": "87/{87ED90DD-FDEE-5E90-09C9-6688741B37BA}.wem"
+     },
+     {
+      "Id": "819745116",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_WID_Numers-001.wav",
+      "CachePath": "A8/{A8610733-1646-9CE9-9D43-7201CCC6FF18}.wem"
+     },
+     {
+      "Id": "997997753",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_samba_perc_03.wav",
+      "CachePath": "E0/{E000A729-BCBC-DBAC-5E1A-9B89AADC517A}.wem"
+     },
+     {
+      "Id": "1013324359",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_WID_Numers-003.wav",
+      "CachePath": "C9/{C9EC0005-87C9-3EA5-E3B9-F30C1FF20BFC}.wem"
+     },
+     {
+      "Id": "1017816269",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_samba_perc_01.wav",
+      "CachePath": "67/{6760E46F-7F43-040F-3177-6C849E6728ED}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3707049636",
+      "Name": "Play_UI_WID_Numers_001",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_UI_WID_Numers_001",
+      "GUID": "{7B839F3A-1C65-416C-8D3D-B67C80866A44}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "819745116"
+       }
+      ]
+     },
+     {
+      "Id": "3707049639",
+      "Name": "Play_UI_WID_Numers_002",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_UI_WID_Numers_002",
+      "GUID": "{78052AE1-86B7-4DF6-BE1B-F5B889D9B77E}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "802669513"
+       }
+      ]
+     },
+     {
+      "Id": "3707049638",
+      "Name": "Play_UI_WID_Numers_003",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_UI_WID_Numers_003",
+      "GUID": "{9FEBDDE1-31A3-4C24-9D06-4B23EFDB5420}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "1013324359"
+       }
+      ]
+     },
+     {
+      "Id": "3707049633",
+      "Name": "Play_UI_WID_Numers_004",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_UI_WID_Numers_004",
+      "GUID": "{1D8C1E24-3BE0-4DF4-BF60-828C30C568F6}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "209230691"
+       }
+      ]
+     },
+     {
+      "Id": "1429455491",
+      "Name": "Play_Vertical_Interchange_ST",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_Vertical_Interchange_ST",
+      "GUID": "{378C174F-6DA1-462E-9B20-82CB755B0745}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "131473197"
+       },
+       {
+        "Id": "224358471"
+       },
+       {
+        "Id": "228152782"
+       },
+       {
+        "Id": "268302885"
+       },
+       {
+        "Id": "700173175"
+       },
+       {
+        "Id": "997997753"
+       },
+       {
+        "Id": "1017816269"
+       }
+      ]
+     },
+     {
+      "Id": "1429455488",
+      "Name": "Play_Vertical_Interchange_SW",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_Vertical_Interchange_SW",
+      "GUID": "{CB8C7AFE-8A55-4F61-96EA-83FD7D64ED20}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "131473197"
+       },
+       {
+        "Id": "224358471"
+       },
+       {
+        "Id": "228152782"
+       },
+       {
+        "Id": "268302885"
+       },
+       {
+        "Id": "700173175"
+       },
+       {
+        "Id": "997997753"
+       },
+       {
+        "Id": "1017816269"
+       }
+      ]
+     },
+     {
+      "Id": "2850775519",
+      "Name": "Set_State_Layer_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Set_State_Layer_01",
+      "GUID": "{A8CD4421-CAE1-4594-8BB8-468C2BB55322}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3991942870",
+        "Id": "1126787302",
+        "Name": "Layer_01",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Layer_01",
+        "GUID": "{795B06C8-6F61-44E6-83BE-51D293A0C1B3}"
+       }
+      ]
+     },
+     {
+      "Id": "2850775516",
+      "Name": "Set_State_Layer_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Set_State_Layer_02",
+      "GUID": "{7FAD4261-4FFF-4C13-8791-554400DEC958}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3991942870",
+        "Id": "1126787301",
+        "Name": "Layer_02",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Layer_02",
+        "GUID": "{C8F1C833-2AE7-463A-AA88-5D5F1010CBB6}"
+       }
+      ]
+     },
+     {
+      "Id": "2850775517",
+      "Name": "Set_State_Layer_03",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Set_State_Layer_03",
+      "GUID": "{2E115A95-A2B1-41E7-A8FE-6B43CC518DD9}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3991942870",
+        "Id": "1126787300",
+        "Name": "Layer_03",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Layer_03",
+        "GUID": "{B6EFA9DD-1370-480C-8D17-84DCB9A33EDF}"
+       }
+      ]
+     },
+     {
+      "Id": "2850775514",
+      "Name": "Set_State_Layer_04",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Set_State_Layer_04",
+      "GUID": "{4F0F573C-5DE0-42EF-9610-31EF7B49902B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3991942870",
+        "Id": "1126787299",
+        "Name": "Layer_04",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Layer_04",
+        "GUID": "{475B89C5-F1DE-4AD1-8C49-EDB12378DD16}"
+       }
+      ]
+     },
+     {
+      "Id": "3925293202",
+      "Name": "Set_Switch_Layer_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Set_Switch_Layer_01",
+      "GUID": "{D9E51A52-99BE-40B9-A5F2-F9A41A9B24AF}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "3991942870",
+        "Id": "1126787302",
+        "Name": "Layer_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music\\Layer_01",
+        "GUID": "{7BA7AD59-66F1-4B51-A677-805DD3B3C0B2}"
+       }
+      ]
+     },
+     {
+      "Id": "3925293201",
+      "Name": "Set_Switch_Layer_02",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Set_Switch_Layer_02",
+      "GUID": "{74F7529A-4FCB-49A5-BB69-5821AA2F6D08}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "3991942870",
+        "Id": "1126787301",
+        "Name": "Layer_02",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music\\Layer_02",
+        "GUID": "{8524CDF3-30AD-44EE-A20C-2BFF6C597D17}"
+       }
+      ]
+     },
+     {
+      "Id": "3925293200",
+      "Name": "Set_Switch_Layer_03",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Set_Switch_Layer_03",
+      "GUID": "{F7588E21-FC34-42C4-A0F5-B1742F787D47}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "3991942870",
+        "Id": "1126787300",
+        "Name": "Layer_03",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music\\Layer_03",
+        "GUID": "{424A665D-9100-4A3C-BADD-99431C63C895}"
+       }
+      ]
+     },
+     {
+      "Id": "3925293207",
+      "Name": "Set_Switch_Layer_04",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Set_Switch_Layer_04",
+      "GUID": "{30D4BCA9-02E2-49EC-9E58-610CAFE88BEF}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "3991942870",
+        "Id": "1126787299",
+        "Name": "Layer_04",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music\\Layer_04",
+        "GUID": "{56348E91-1626-46EE-9B1A-684C5FEF84E1}"
+       }
+      ]
+     }
+    ],
+    "Busses": [
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\States\\Default Work Unit\\Music",
+      "GUID": "{9BED983E-5B53-4A7B-9EBE-B64332F888BB}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\None",
+        "GUID": "{95978439-D71A-46AC-99A7-5082E4E289E5}"
+       },
+       {
+        "Id": "1126787299",
+        "Name": "Layer_04",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Layer_04",
+        "GUID": "{475B89C5-F1DE-4AD1-8C49-EDB12378DD16}"
+       },
+       {
+        "Id": "1126787300",
+        "Name": "Layer_03",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Layer_03",
+        "GUID": "{B6EFA9DD-1370-480C-8D17-84DCB9A33EDF}"
+       },
+       {
+        "Id": "1126787301",
+        "Name": "Layer_02",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Layer_02",
+        "GUID": "{C8F1C833-2AE7-463A-AA88-5D5F1010CBB6}"
+       },
+       {
+        "Id": "1126787302",
+        "Name": "Layer_01",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Layer_01",
+        "GUID": "{795B06C8-6F61-44E6-83BE-51D293A0C1B3}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music",
+      "GUID": "{85CB16AD-7BBD-43DE-A2B3-91C27C360891}",
+      "Switches": [
+       {
+        "Id": "1126787299",
+        "Name": "Layer_04",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music\\Layer_04",
+        "GUID": "{56348E91-1626-46EE-9B1A-684C5FEF84E1}"
+       },
+       {
+        "Id": "1126787300",
+        "Name": "Layer_03",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music\\Layer_03",
+        "GUID": "{424A665D-9100-4A3C-BADD-99431C63C895}"
+       },
+       {
+        "Id": "1126787301",
+        "Name": "Layer_02",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music\\Layer_02",
+        "GUID": "{8524CDF3-30AD-44EE-A20C-2BFF6C597D17}"
+       },
+       {
+        "Id": "1126787302",
+        "Name": "Layer_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music\\Layer_01",
+        "GUID": "{7BA7AD59-66F1-4B51-A677-805DD3B3C0B2}"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{2373B1A5-F640-1704-AD34-0C9EDDC207CB}"
+  "FileHash": "{A18EE069-F1EE-451F-2985-0FF174CA946A}"
  }
 }

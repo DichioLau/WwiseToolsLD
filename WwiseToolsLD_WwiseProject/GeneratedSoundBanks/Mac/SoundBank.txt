@@ -1,0 +1,32 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1429455488	Play_Vertical_Interchange_SW			\Default Work Unit\1\Play_Vertical_Interchange_SW	
+	1429455491	Play_Vertical_Interchange_ST			\Default Work Unit\1\Play_Vertical_Interchange_ST	
+	2850775514	Set_State_Layer_04			\Default Work Unit\1\Set_State_Layer_04	
+	2850775516	Set_State_Layer_02			\Default Work Unit\1\Set_State_Layer_02	
+	2850775517	Set_State_Layer_03			\Default Work Unit\1\Set_State_Layer_03	
+	2850775519	Set_State_Layer_01			\Default Work Unit\1\Set_State_Layer_01	
+	3707049633	Play_UI_WID_Numers_004			\Default Work Unit\1\Play_UI_WID_Numers_004	
+	3707049636	Play_UI_WID_Numers_001			\Default Work Unit\1\Play_UI_WID_Numers_001	
+	3707049638	Play_UI_WID_Numers_003			\Default Work Unit\1\Play_UI_WID_Numers_003	
+	3707049639	Play_UI_WID_Numers_002			\Default Work Unit\1\Play_UI_WID_Numers_002	
+	3925293200	Set_Switch_Layer_03			\Default Work Unit\1\Set_Switch_Layer_03	
+	3925293201	Set_Switch_Layer_02			\Default Work Unit\1\Set_Switch_Layer_02	
+	3925293202	Set_Switch_Layer_01			\Default Work Unit\1\Set_Switch_Layer_01	
+	3925293207	Set_Switch_Layer_04			\Default Work Unit\1\Set_Switch_Layer_04	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	131473197	Synth_02	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\61\{619A687A-BA3A-FCD6-6D0E-49E786CEA064}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_ST\Music2\Synth_02		1411296
+	209230691	UI_WID_Numers-004	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\ED\{EDDF31A3-CA28-AD7F-C812-B3B54E28A92F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\1_BoxEvent\UI_WID_Numers-004		192096
+	224358471	Perc	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\AA\{AA2B3BC1-7F67-9DF3-34C2-E9080CD7E243}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_SW\Music1\Perc		1411296
+	228152782	Synth_02	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\B7\{B7B0A6EF-AEB8-B6C1-34B7-1053FD877724}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_ST\Music2\Synth_02		1411296
+	268302885	Synth_01	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\0E\{0EF0F4E4-4839-CA56-8897-4AB525291C73}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_ST\Music2\Synth_01		1411296
+	700173175	Perc	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\D5\{D5BD3C8B-7C1E-8E86-17BB-DF405825595D}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_SW\Music1\Perc		1411296
+	802669513	UI_WID_Numers-002	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\87\{87ED90DD-FDEE-5E90-09C9-6688741B37BA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\1_BoxEvent\UI_WID_Numers-002		192096
+	819745116	UI_WID_Numers-001	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\A8\{A8610733-1646-9CE9-9D43-7201CCC6FF18}.wem		\Actor-Mixer Hierarchy\Default Work Unit\1_BoxEvent\UI_WID_Numers-001		192096
+	997997753	Kick	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\E0\{E000A729-BCBC-DBAC-5E1A-9B89AADC517A}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_SW\Music1\Kick		1411296
+	1013324359	UI_WID_Numers-003	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\C9\{C9EC0005-87C9-3EA5-E3B9-F30C1FF20BFC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\1_BoxEvent\UI_WID_Numers-003		192096
+	1017816269	Perc	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\67\{6760E46F-7F43-040F-3177-6C849E6728ED}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_SW\Music1\Perc		1411296
+

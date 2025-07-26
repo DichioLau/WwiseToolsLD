@@ -4,7 +4,12 @@
 		<WorkUnit Name="Default Work Unit" ID="{1F3DCAFE-84D4-4D18-A846-9381C4FD0C67}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="SoundBank" ID="{8AB65D46-CFEB-4ABF-B717-D84D390B748C}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{88214CCD-EEE7-43F7-873A-AA2467AECD54}" WorkUnitID="{88214CCD-EEE7-43F7-873A-AA2467AECD54}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{930AC8CF-71D3-4547-986B-3750B6971EFC}" WorkUnitID="{930AC8CF-71D3-4547-986B-3750B6971EFC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="1" ID="{BA7518A9-DCB0-470A-B601-503EF8B07AFF}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{E6CF9B95-2147-497E-BF9C-DC4D39A6549E}" WorkUnitID="{E6CF9B95-2147-497E-BF9C-DC4D39A6549E}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
