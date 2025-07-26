@@ -32,6 +32,8 @@ Each episode includes:
 
 📺 Watch the series: [YouTube playlist](#)
 
+ Episode 1: [AKLD_EventMultiBox](https://youtu.be/WdFs3uQ-2k8)
+
 ---
 
 ## 🧩 Included Tools
