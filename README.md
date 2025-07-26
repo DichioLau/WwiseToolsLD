@@ -39,7 +39,7 @@ Each episode includes:
 
 | Tool | Description | Video | Status |
 |------|-------------|--------|--------|
-| `AKLD_EventMultiBox` | Define and visualize multiple trigger areas from a single GameObject to trigger Wwise events. | [Episode 1](#akld_eventmultibox) | ✅ Available |
+| `AKLD_EventMultiBox` | Define and visualize multiple trigger areas from a single GameObject to trigger Wwise events. | [Episode 1](https://youtu.be/WdFs3uQ-2k8) | ✅ Available |
 | *(more coming soon)* |  |  | 🔜 |
 
 ---
