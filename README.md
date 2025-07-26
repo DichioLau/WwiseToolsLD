@@ -30,8 +30,7 @@ Each episode includes:
 - A simple and flexible solution
 - A downloadable Unity script you can use freely
 
-📺 Watch the series: [YouTube playlist](#)
-
+📺 Watch the series: 
  Episode 1: [AKLD_EventMultiBox](https://youtu.be/WdFs3uQ-2k8)
 
 ---
