@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{8AB65D46-CFEB-4ABF-B717-D84D390B748C}",
     "Language": "SFX",
-    "Hash": "{8EF6946F-5D81-4682-59C7-13328AC2ED08}",
+    "Hash": "{B2173D7D-9793-692E-AA80-56F05E6B8115}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank",
     "ShortName": "SoundBank",
     "Path": "SoundBank.bnk",
     "Media": [
+     {
+      "Id": "5048769",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Dron_Synth_4.wav",
+      "CachePath": "85/{85A9049D-2676-23DE-2B8D-17EDE4AB751E}.wem"
+     },
      {
       "Id": "131473197",
       "Language": "SFX",
@@ -30,6 +38,14 @@
       "Location": "Memory",
       "ShortName": "UI_WID_Numers-004.wav",
       "CachePath": "ED/{EDDF31A3-CA28-AD7F-C812-B3B54E28A92F}.wem"
+     },
+     {
+      "Id": "211732998",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Dron_Beat.wav",
+      "CachePath": "56/{569C0A3B-5E5D-5428-B37F-09C788F551F6}.wem"
      },
      {
       "Id": "224358471",
@@ -56,12 +72,36 @@
       "CachePath": "0E/{0EF0F4E4-4839-CA56-8897-4AB525291C73}.wem"
      },
      {
+      "Id": "284358010",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Dron_Synth_2_SEQ.wav",
+      "CachePath": "CA/{CAAC8642-607B-3FF7-8BFA-203E2B6534F8}.wem"
+     },
+     {
+      "Id": "383000394",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Dron_Synth_3.wav",
+      "CachePath": "D7/{D7C70AFF-676F-EEDC-293E-6368B53E1C92}.wem"
+     },
+     {
       "Id": "700173175",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "music_samba_perc_04.wav",
       "CachePath": "D5/{D5BD3C8B-7C1E-8E86-17BB-DF405825595D}.wem"
+     },
+     {
+      "Id": "720281021",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_bells_01.wav",
+      "CachePath": "F2/{F2B3984F-108B-24E5-0EE3-2BE767FA6B6A}.wem"
      },
      {
       "Id": "802669513",
@@ -102,6 +142,14 @@
       "Location": "Memory",
       "ShortName": "music_samba_perc_01.wav",
       "CachePath": "67/{6760E46F-7F43-040F-3177-6C849E6728ED}.wem"
+     },
+     {
+      "Id": "1051141139",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Dron_Synth_1.wav",
+      "CachePath": "D4/{D4213BE4-E7BD-A956-3165-836E0635F1F1}.wem"
      }
     ],
     "Events": [
@@ -160,6 +208,30 @@
       ]
      },
      {
+      "Id": "322259349",
+      "Name": "Play_Vertical_Heart",
+      "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_Vertical_Heart",
+      "GUID": "{F675A513-7459-48B1-AFC5-42EFE32B2892}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "5048769"
+       },
+       {
+        "Id": "211732998"
+       },
+       {
+        "Id": "284358010"
+       },
+       {
+        "Id": "383000394"
+       },
+       {
+        "Id": "1051141139"
+       }
+      ]
+     },
+     {
       "Id": "1429455491",
       "Name": "Play_Vertical_Interchange_ST",
       "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_Vertical_Interchange_ST",
@@ -206,10 +278,10 @@
         "Id": "228152782"
        },
        {
-        "Id": "268302885"
+        "Id": "700173175"
        },
        {
-        "Id": "700173175"
+        "Id": "720281021"
        },
        {
         "Id": "997997753"
@@ -380,6 +452,22 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
     ],
+    "GameParameters": [
+     {
+      "Id": "837114063",
+      "Name": "AKLD_HEART_BEAT",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AKLD_HEART_BEAT",
+      "GUID": "{4A7A8601-14F0-4FF1-8021-33429EF3F46A}",
+      "Color": "3"
+     },
+     {
+      "Id": "913938608",
+      "Name": "AKLD_HEART",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AKLD_HEART",
+      "GUID": "{49838DEA-47C0-4BBC-A8FA-858EB63384B3}",
+      "Color": "3"
+     }
+    ],
     "StateGroups": [
      {
       "Id": "3991942870",
@@ -456,6 +544,6 @@
     ]
    }
   ],
-  "FileHash": "{07D63CDD-BE28-878C-8083-23D7B66EB7B0}"
+  "FileHash": "{B06A2969-F6FA-F4B6-A009-638455DE54A8}"
  }
 }

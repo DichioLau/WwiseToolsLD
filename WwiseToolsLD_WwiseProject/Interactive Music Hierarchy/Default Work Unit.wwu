@@ -443,11 +443,23 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="music_bells_01" ID="{6DACAF50-CA41-4D2E-8C61-22693EC541BA}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>music_bells_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="268302885"/>
+														<MediaID ID="720281021"/>
 													</MediaIDList>
+													<ObjectLists>
+														<ObjectList Name="Markers">
+															<Reference>
+																<Local>
+																	<Marker Name="" ID="{8FD7CFC2-6E2F-464F-9B79-F505FE2F275A}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists>
@@ -647,6 +659,16 @@
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
 															<Property Name="TimeMs" Type="Real64" Value="7994.23714667992"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="" ID="{D4C9B9C2-160A-485D-B57F-5D2D6DAF3040}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="971.339270272934"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -1269,6 +1291,441 @@
 															<Property Name="TimeMs" Type="Real64" Value="7994.23714667992"/>
 														</PropertyList>
 													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Vertical_Heart" ID="{AE44BB3D-6E9D-4504-9F49-0C581B49D3DC}" ShortID="754438199">
+							<PropertyList>
+								<Property Name="Tempo" Type="Real64" Value="155"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BE05EF9-E1EF-4783-AA57-53F854708710}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{930AC8CF-71D3-4547-986B-3750B6971EFC}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{3B4C7D97-BC82-4485-A9DB-757D99450E4D}" ShortID="787993403">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{1B651AD7-DB69-4DB2-95CE-7B615E835AF4}" ShortID="817799743">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Synth" ID="{8DBD30A5-FBE9-4306-A8CE-D506C84A23CA}" WorkUnitID="{E6CF9B95-2147-497E-BF9C-DC4D39A6549E}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{206C5C56-C667-4D12-8A19-B512479BF877}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{97540891-C183-48A7-A83B-E05FCEEA6DCD}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Synth" ID="{8DBD30A5-FBE9-4306-A8CE-D506C84A23CA}" ShortID="59000340">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="27188.790560472"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BE05EF9-E1EF-4783-AA57-53F854708710}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{930AC8CF-71D3-4547-986B-3750B6971EFC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Beat" ID="{296BD504-BBAF-4602-8A32-75722EE10A15}" ShortID="387184184">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="1"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{930AC8CF-71D3-4547-986B-3750B6971EFC}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{C97AA77E-E163-4633-8B89-348BF17E418B}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dron_Beat" ID="{AA78CCD4-7841-4B86-A309-A7ED2A0E8627}">
+													<Language>SFX</Language>
+													<AudioFile>Dron_Beat.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="211732998"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{CACFDE73-5B8D-46C5-B5EA-765F7BE9CE2F}" ShortID="315271094">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="AKLD_HEART_BEAT" ID="{4A7A8601-14F0-4FF1-8021-33429EF3F46A}" WorkUnitID="{4855DE21-6B4E-4AC4-885A-E35B89B368CD}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{90B1B4B0-A677-4CF9-984D-C13F75AF15B9}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{38CFA65D-1763-4474-83D9-5461412C695D}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Dron_Beat" ID="{5EBE6B27-31A5-41CC-A70C-8971CDB2EFE4}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24774.2083333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Dron_Beat" ID="{AA78CCD4-7841-4B86-A309-A7ED2A0E8627}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Synth_01_Pad" ID="{FEA426DF-5B98-4FF0-B4EB-C1DF8D4FA6FD}" ShortID="284764920">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{930AC8CF-71D3-4547-986B-3750B6971EFC}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{509066CC-456F-48CC-97E4-058898FAEB56}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dron_Synth_1" ID="{747280EA-6BD2-44BB-9C13-F04DFF1EE8D0}">
+													<Language>SFX</Language>
+													<AudioFile>Dron_Synth_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1051141139"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E6EEAD48-AFD2-44A9-93ED-B6BCF77E3FEC}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Dron_Synth_1" ID="{E22C5E25-B267-48B5-89E3-24AB56641D73}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24774.2083333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Dron_Synth_1" ID="{747280EA-6BD2-44BB-9C13-F04DFF1EE8D0}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Synth_02_Seq" ID="{5DE060DE-2641-4E73-B7D5-BF863365F15A}" ShortID="1042203135">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{930AC8CF-71D3-4547-986B-3750B6971EFC}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{265683DE-4C89-4983-AA36-898A2A6A0876}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dron_Synth_2_SEQ" ID="{FC0A7528-4EFF-4692-9D16-2FD1D46794C9}">
+													<Language>SFX</Language>
+													<AudioFile>Dron_Synth_2_SEQ.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="284358010"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{81D8A85D-2572-4076-AA0B-F3DDDF478725}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Dron_Synth_2_SEQ" ID="{2498F327-315E-407B-8D09-0B90E25260AF}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24774.2083333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Dron_Synth_2_SEQ" ID="{FC0A7528-4EFF-4692-9D16-2FD1D46794C9}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Synth_03" ID="{7B73F3EE-8C8A-43EE-91E5-125716360E3B}" ShortID="1006930491">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{930AC8CF-71D3-4547-986B-3750B6971EFC}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{8E80CD3E-7A14-4D6F-9477-85F4CF5D7121}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dron_Synth_3" ID="{74C4D0A6-0540-43E4-B1B3-B4B6761EDF8A}">
+													<Language>SFX</Language>
+													<AudioFile>Dron_Synth_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="383000394"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{AA9BAF6F-8FCA-4D73-B6D4-D645212B4CDD}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Dron_Synth_3" ID="{6901B4A9-D62E-4AD2-88E5-B204A6AEE25D}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24774.2083333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Dron_Synth_3" ID="{74C4D0A6-0540-43E4-B1B3-B4B6761EDF8A}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Synth_04_Pad" ID="{52EE299C-A52C-4600-9B40-3C7AF1404E88}" ShortID="100502306">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{930AC8CF-71D3-4547-986B-3750B6971EFC}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{BDD8F242-E515-40DC-A102-CD5EF8BE094D}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dron_Synth_4" ID="{05AE6D3B-E777-4190-93C1-E6F341DD10FD}">
+													<Language>SFX</Language>
+													<AudioFile>Dron_Synth_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="5048769"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{422DAEDE-7F47-43EB-A122-9ECC81AD04BA}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Dron_Synth_4" ID="{0A776D6C-D10D-4A50-BDDE-950A31200871}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24774.2083333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Dron_Synth_4" ID="{05AE6D3B-E777-4190-93C1-E6F341DD10FD}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{D8342EE8-2D9D-4F67-BAE1-F3CF834B6968}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{C4D1E3A5-2F93-4747-9910-86D6BE46259D}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="24775.8112094395"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{EBC48EAE-22F2-4B66-83D9-6F54122418B6}" ShortID="968088745">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="AKLD_HEART" ID="{49838DEA-47C0-4BBC-A8FA-858EB63384B3}" WorkUnitID="{4855DE21-6B4E-4AC4-885A-E35B89B368CD}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{47BDCD24-989E-4359-B34A-FFA3E4F18D37}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>9.58132</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
 												</Local>
 											</Reference>
 										</ObjectList>
