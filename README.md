@@ -37,11 +37,13 @@ Episode 1: [AKLD_EventMultiBox](https://youtu.be/WdFs3uQ-2k8)
 
 ## 🧩 Included Tools
 
-| Tool | Description | Video | Status |
-|------|-------------|-------|--------|
-| `AKLD_EventMultiBox` | Define and visualize multiple trigger areas from a single GameObject to trigger Wwise events. | [Episode 1](https://youtu.be/WdFs3uQ-2k8) | ✅ Available |
-| `AKLD_HeartbeatModulator` | Modulate RTPCs with a heartbeat-shaped curve synced to music bars/beats and weighted by proximity zones. | — | ✅ Available |
-| *(more coming soon)* |  |  | 🔜 |
+| Tool                      | Description                                                                                                                                      | Video                                     | Status      |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- | ----------- |
+| `AKLD_EventMultiBox`      | Define and visualize multiple trigger areas from a single GameObject to trigger Wwise events.                                                    | [Episode 1](https://youtu.be/WdFs3uQ-2k8) | ✅ Available |
+| `AKLD_HeartbeatModulator` | Modulate RTPCs with a heartbeat-shaped curve synced to music bars/beats and weighted by proximity zones.                                         | —                                         | ✅ Available |
+| `AKLD_DevMixerGroup`      | Control global Wwise RTPCs from the Inspector (0–100 knob mapped to \[min..max], per-RTPC mute/solo, master mute). Editor-only for fast testing. | —                                         | ✅ Available |
+| *(more coming soon)*      |                                                                                                                                                  |                                           | 🔜          |
+
 
 ---
 
@@ -120,13 +122,71 @@ A MonoBehaviour that **modulates one or more Wwise RTPCs** using a heartbeat-sha
 
 ---
 
+## 🔷 AKLD_DevMixerGroup
+
+### 🎯 What is it?
+Editor-only dev mixer (Unity + Wwise) to control **global RTPCs** from the Inspector.
+Perfect for QA/dev when menus aren’t ready or you need quick audio tweaks.
+
+- 0–100 **knob** remapped to **[min..max]** per RTPC
+- **Per-RTPC mute** and **solo** + **Master Mute** for the whole group
+- Applies on **Update** and **OnValidate** (avoids redundant RTPC sets)
+- Plug-and-play with **AK.Wwise.RTPC** assets
+
+### 🚀 Use Cases
+- Fast **music/SFX/VO** level changes during testing
+- **A/B** mix checks without UI
+- Temporarily **kill music** or isolate one RTPC while debugging
+
+### 🧰 How to use
+1) Add `AKLD_DevMixerGroup` to any GameObject.
+2) In **Dev Mixers**, add entries and assign **AK.Wwise.RTPC** (global).
+3) For each entry:
+   - Set **min / max** (RTPC range, e.g., 0–100 or 0–1).
+   - Adjust the **Knob (0–100)** (auto-mapped to `[min..max]`).
+   - Toggle **Mute / Solo** as needed.
+4) Use **Master Mute** to force **min** on all entries.
+5) Press **Play** and tweak live (also applies immediately when moving sliders in the Inspector).
+
+> Note: This component is **Editor-only** by design (`#if UNITY_EDITOR`).  
+> If you need it in builds, remove the guard and keep editor calls wrapped in `#if UNITY_EDITOR`.
+
+### 🩺 Troubleshooting
+- **No change in game?** Ensure those RTPCs are truly **global** and used in your Wwise mix.
+- **Values look off?** Verify **min/max** matches the RTPC scale (e.g., 0–1 vs 0–100).
+- **Solo not working?** If **any** entry is soloed, all **non-solo** entries are muted.
+- **Component missing in “Add Component”?** Class must be `public` `MonoBehaviour`, file name must match, script not under an `Editor/` folder, and there must be **no compile errors**.
+
+---
+
 ## 📦 Requirements
 - **Unity** with **Wwise Unity Integration** installed  
 - Scripts can be dropped into any project folder (no special setup required)
 
 ---
 
-## 📝 License
-MIT — use freely in commercial and non-commercial projects. A credit is appreciated but not required.
+## 📝 License — AKLD Tools Simple License (No Resale / No Monetization of the Tools)
+
+TL;DR
+- ✅ Intended for audio folks, devs, technical designers, composers, programmers, etc.
+- ✅ Free to use inside your games/apps (commercial or not).
+- ✅ You can modify them within your project/team.
+- 🙌 Feedback, shoutouts, and credits are appreciated (not required).
+- ❌ You may NOT monetize the Tools themselves (no selling, paywalling, renting, or paid access to the scripts).
+- ❌ You may NOT resell/repackage/redistribute them as standalone assets, asset packs, templates, plugins, SDKs, libraries, or similar.
+- ❌ Do NOT upload them to marketplaces or repos as “assets” on their own.
+
+Copyright (c) 2025 Lautaro Dichio
+
+Permission is granted to use and modify these tools for creating and shipping interactive
+applications (including commercial games). Redistribution is allowed only when the tools are
+embedded in your application in a way that users cannot extract or reuse them as assets.
+
+You may not monetize, resell, sublicense, repackage, or redistribute the tools by themselves,
+including (but not limited to) asset packs, templates, plugins, SDKs, libraries, paid bundles,
+or tool collections, whether free or paid.
+
+THE TOOLS ARE PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND.
+*/
 
 ---
