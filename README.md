@@ -41,7 +41,7 @@ Episode 1: [AKLD_EventMultiBox](https://youtu.be/WdFs3uQ-2k8)
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- | ----------- |
 | `AKLD_EventMultiBox`      | Define and visualize multiple trigger areas from a single GameObject to trigger Wwise events.                                                    | [Episode 1](https://youtu.be/WdFs3uQ-2k8) | ✅ Available |
 | `AKLD_HeartbeatModulator` | Modulate RTPCs with a heartbeat-shaped curve synced to music bars/beats and weighted by proximity zones.                                         | —                                         | ✅ Available |
-| `AKLD_DevMixerGroup`      | Control global Wwise RTPCs from the Inspector (0–100 knob mapped to \[min..max], per-RTPC mute/solo, master mute). Editor-only for fast testing. | —                                         | ✅ Available |
+| `AKLD_DevMixer`           | Control global Wwise RTPCs from the Inspector (0–100 knob mapped to \[min..max], per-RTPC mute/solo, master mute). Editor-only for fast testing. | —                                         | ✅ Available |
 | *(more coming soon)*      |                                                                                                                                                  |                                           | 🔜          |
 
 
@@ -159,15 +159,27 @@ Perfect for QA/dev when menus aren’t ready or you need quick audio tweaks.
 
 ---
 
+## 📬 Contact
+
+Have questions, ideas, or a collab in mind? Let’s talk! 🙌
+
+- 💌 Email: **lautarodichio@hotmail.com**  
+- 💼 LinkedIn: **https://www.linkedin.com/in/lautaro-dichio/**
+- 🗣️ Languages: English & Spanish (AR)
+- 📍 Buenos Aires (UTC−3)
+
+I try to reply as soon as I can ✨
+
+---
+
 ## 📦 Requirements
 - **Unity** with **Wwise Unity Integration** installed  
 - Scripts can be dropped into any project folder (no special setup required)
 
 ---
 
-## 📝 License — AKLD Tools Simple License (No Resale / No Monetization of the Tools)
+## 📝 License — AKLD Tools Simple License 
 
-TL;DR
 - ✅ Intended for audio folks, devs, technical designers, composers, programmers, etc.
 - ✅ Free to use inside your games/apps (commercial or not).
 - ✅ You can modify them within your project/team.
