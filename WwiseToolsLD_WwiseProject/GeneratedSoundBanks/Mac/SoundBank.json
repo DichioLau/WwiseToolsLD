@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{8AB65D46-CFEB-4ABF-B717-D84D390B748C}",
     "Language": "SFX",
-    "Hash": "{B2173D7D-9793-692E-AA80-56F05E6B8115}",
+    "Hash": "{E0917227-E4E0-7A9D-6E71-B1263DE105D0}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank",
     "ShortName": "SoundBank",
     "Path": "SoundBank.bnk",
@@ -153,6 +153,28 @@
      }
     ],
     "Events": [
+     {
+      "Id": "3032972107",
+      "Name": "Play_SfxTest",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SfxTest",
+      "GUID": "{B04060C0-E5BE-48D8-8B35-52B8198B58B4}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "209230691"
+       },
+       {
+        "Id": "802669513"
+       },
+       {
+        "Id": "819745116"
+       },
+       {
+        "Id": "1013324359"
+       }
+      ]
+     },
      {
       "Id": "3707049636",
       "Name": "Play_UI_WID_Numers_001",
@@ -446,26 +468,50 @@
     ],
     "Busses": [
      {
+      "Id": "393239870",
+      "Name": "Sfx",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Sfx",
+      "GUID": "{21B2E9B2-73F6-42A7-9973-0A66BA547ABA}"
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music",
+      "GUID": "{E0FCCC8C-19EF-4221-B0A2-6330CFE3A20E}"
      }
     ],
     "GameParameters": [
      {
+      "Id": "393239870",
+      "Name": "Sfx",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixer\\Sfx",
+      "GUID": "{B69073C0-843C-4049-9E84-31BEE89B9542}"
+     },
+     {
       "Id": "837114063",
       "Name": "AKLD_HEART_BEAT",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AKLD_HEART_BEAT",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\HeartBeat\\AKLD_HEART_BEAT",
       "GUID": "{4A7A8601-14F0-4FF1-8021-33429EF3F46A}",
       "Color": "3"
      },
      {
       "Id": "913938608",
       "Name": "AKLD_HEART",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AKLD_HEART",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\HeartBeat\\AKLD_HEART",
       "GUID": "{49838DEA-47C0-4BBC-A8FA-858EB63384B3}",
       "Color": "3"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixer\\Music",
+      "GUID": "{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}"
      }
     ],
     "StateGroups": [
@@ -544,6 +590,6 @@
     ]
    }
   ],
-  "FileHash": "{B06A2969-F6FA-F4B6-A009-638455DE54A8}"
+  "FileHash": "{9FDF1802-63B7-F79A-D201-0129127CFFA7}"
  }
 }

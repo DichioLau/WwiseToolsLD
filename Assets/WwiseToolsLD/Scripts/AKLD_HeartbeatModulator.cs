@@ -25,6 +25,8 @@ using UnityEditor;
 // ===============================
 // ReadOnly helper for Inspector
 // ===============================
+
+
 public class ReadOnlyAttribute : PropertyAttribute { }
 
 #if UNITY_EDITOR
@@ -42,6 +44,7 @@ public class ReadOnlyDrawer : PropertyDrawer
 // ===============================
 
 [ExecuteAlways]
+[AddComponentMenu("AKLD/AKLD Heartbeat Modulator")]
 public class AKLD_HeartbeatModulator : MonoBehaviour
 {
     // ===============================

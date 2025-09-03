@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2850775516	Set_State_Layer_02			\Default Work Unit\1\Set_State_Layer_02	
 	2850775517	Set_State_Layer_03			\Default Work Unit\1\Set_State_Layer_03	
 	2850775519	Set_State_Layer_01			\Default Work Unit\1\Set_State_Layer_01	
+	3032972107	Play_SfxTest			\Default Work Unit\Play_SfxTest	
 	3707049633	Play_UI_WID_Numers_004			\Default Work Unit\1\Play_UI_WID_Numers_004	
 	3707049636	Play_UI_WID_Numers_001			\Default Work Unit\1\Play_UI_WID_Numers_001	
 	3707049638	Play_UI_WID_Numers_003			\Default Work Unit\1\Play_UI_WID_Numers_003	
@@ -16,11 +17,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	3925293207	Set_Switch_Layer_04			\Default Work Unit\1\Set_Switch_Layer_04	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	837114063	AKLD_HEART_BEAT			\Default Work Unit\AKLD_HEART_BEAT	
-	913938608	AKLD_HEART			\Default Work Unit\AKLD_HEART	
+	393239870	Sfx			\Default Work Unit\Mixer\Sfx	
+	837114063	AKLD_HEART_BEAT			\Default Work Unit\HeartBeat\AKLD_HEART_BEAT	
+	913938608	AKLD_HEART			\Default Work Unit\HeartBeat\AKLD_HEART	
+	3991942870	Music			\Default Work Unit\Mixer\Music	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	Sfx			\Default Work Unit\Master Audio Bus\Sfx	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	5048769	Synth_04_Pad	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\85\{85A9049D-2676-23DE-2B8D-17EDE4AB751E}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical_Heart\Synth\Synth_04_Pad		4756744
@@ -34,10 +39,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	383000394	Synth_03	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\D7\{D7C70AFF-676F-EEDC-293E-6368B53E1C92}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical_Heart\Synth\Synth_03		4756744
 	700173175	Perc	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\D5\{D5BD3C8B-7C1E-8E86-17BB-DF405825595D}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_SW\Music1\Perc		1411296
 	720281021	Synth_01	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\F2\{F2B3984F-108B-24E5-0EE3-2BE767FA6B6A}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_SW\Music1\Synth_01		1411360
-	802669513	UI_WID_Numers-002	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\87\{87ED90DD-FDEE-5E90-09C9-6688741B37BA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\1_BoxEvent\UI_WID_Numers-002		192096
+	802669513	UI_WID_Numers-002	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\87\{87ED90DD-FDEE-5E90-09C9-6688741B37BA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\3_SfxEvent\SfxTest\UI_WID_Numers-002		192096
 	819745116	UI_WID_Numers-001	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\A8\{A8610733-1646-9CE9-9D43-7201CCC6FF18}.wem		\Actor-Mixer Hierarchy\Default Work Unit\1_BoxEvent\UI_WID_Numers-001		192096
 	997997753	Kick	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\E0\{E000A729-BCBC-DBAC-5E1A-9B89AADC517A}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_SW\Music1\Kick		1411296
-	1013324359	UI_WID_Numers-003	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\C9\{C9EC0005-87C9-3EA5-E3B9-F30C1FF20BFC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\1_BoxEvent\UI_WID_Numers-003		192096
+	1013324359	UI_WID_Numers-003	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\C9\{C9EC0005-87C9-3EA5-E3B9-F30C1FF20BFC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\3_SfxEvent\SfxTest\UI_WID_Numers-003		192096
 	1017816269	Perc	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\67\{6760E46F-7F43-040F-3177-6C849E6728ED}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical-Interchange_SW\Music1\Perc		1411296
 	1051141139	Synth_01_Pad	C:\Proyectos\Unity\WTLD\LD\WwiseToolsLD_WwiseProject\.cache\D4\{D4213BE4-E7BD-A956-3165-836E0635F1F1}.wem		\Interactive Music Hierarchy\Default Work Unit\AKLD_Music\Vertical_Heart\Synth\Synth_01_Pad		4756744
 

@@ -196,6 +196,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_SfxTest" ID="{B04060C0-E5BE-48D8-8B35-52B8198B58B4}">
+					<ChildrenList>
+						<Action Name="" ID="{7A7F3EE7-1963-429E-BDCB-432546C3BA2B}" ShortID="205244588">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SfxTest" ID="{F5264778-586C-4709-A1E7-65F443D91531}" WorkUnitID="{88214CCD-EEE7-43F7-873A-AA2467AECD54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

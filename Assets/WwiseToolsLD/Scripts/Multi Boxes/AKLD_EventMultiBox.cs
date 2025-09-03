@@ -16,6 +16,7 @@ using UnityEditor;
 using UnityEngine;
 
 [ExecuteAlways]
+[AddComponentMenu("AKLD/AKLD Event MultiBox")]
 public class AKLD_EventMultiBox : MonoBehaviour
 {
     // The object we want to check if it's inside any area
