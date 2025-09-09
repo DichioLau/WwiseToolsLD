@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="1" ID="{BA7518A9-DCB0-470A-B601-503EF8B07AFF}" ShortID="981261937">
 					<ChildrenList>
-						<Event Name="Play_Vertical_Interchange_SW" ID="{CB8C7AFE-8A55-4F61-96EA-83FD7D64ED20}">
+						<Event Name="Play_Vertical_Interchange_STATE" ID="{CB8C7AFE-8A55-4F61-96EA-83FD7D64ED20}">
 							<ChildrenList>
 								<Action Name="" ID="{FDFCF12C-A7E6-449C-AA9D-A512F7E85CFD}" ShortID="83914860">
 									<ReferenceList>
@@ -116,7 +116,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Vertical_Interchange_ST" ID="{378C174F-6DA1-462E-9B20-82CB755B0745}">
+						<Event Name="Play_Vertical_Interchange_SWITCH" ID="{378C174F-6DA1-462E-9B20-82CB755B0745}">
 							<ChildrenList>
 								<Action Name="" ID="{CCB6FDA6-678D-456D-BDB2-69AE935C2603}" ShortID="780698170">
 									<ReferenceList>

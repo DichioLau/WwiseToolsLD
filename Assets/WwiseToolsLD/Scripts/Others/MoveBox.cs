@@ -40,6 +40,7 @@ public class MoveBox : MonoBehaviour
         {
             timer = 0f;
             movingToEnd = !movingToEnd;
+ 
         }
     }
 }

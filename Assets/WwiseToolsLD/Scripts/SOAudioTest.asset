@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca74c1b15fd49f0419ed1933cc38f71d, type: 3}
+  m_Name: SOAudioTest
+  m_EditorClassIdentifier: 
+  eventComponents:
+  - componentName: EventTest
+    eventComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b053aebfe5337844b95a73fd09664659, type: 2}
+  - componentName: EventTest2
+    eventComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 4d069e5477d85c24db335dff4072774e, type: 2}
+  - componentName: EventNumber1
+    eventComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 1c6cb6bbc0904ad4cb0484d8faf906dc, type: 2}
+  - componentName: EventNumber2
+    eventComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b459dedea3af52f418ccd1a830418b18, type: 2}
+  - componentName: EventNumber3
+    eventComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: c513133d485d23c4998564b544bb8267, type: 2}
+  - componentName: EventNumber4
+    eventComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 3e103cde831257345b0bd9971d7be673, type: 2}
+  - componentName: Music
+    eventComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: c884f88986fcd9a49a6606804f93f413, type: 2}
+  rtpcComponents:
+  - componentName: MusicValue
+    rtpcComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 4641305ff4bf4184fa7c68347a99db7e, type: 2}
+  switchComponents: []
+  stateComponents:
+  - componentName: Layer1
+    stateComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: d344d95c87f9cb6478bc608c2bfc9a1a, type: 2}
+  - componentName: Layer2
+    stateComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: f6aaa942de975e84eb6c647904852b5e, type: 2}
+  - componentName: Layer3
+    stateComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 878153375997f314d9c793a4b63aafe6, type: 2}
+  - componentName: Layer4
+    stateComponent:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 47484e754cad9d04f9176a2988152ee6, type: 2}

@@ -1,7 +1,7 @@
 /*
  * AKLD_DevMixerGroup.cs
- *
- * Author: Lautaro Dichio
+ * Created by Lautaro Dichio (ldichio.com.ar) | Wwise + Unity helper
+ * 
  * Description:
  * Editor-only dev mixer for Unity + Wwise.
  * Controls global RTPCs via a 0–100 knob mapped to [min..max],
@@ -14,7 +14,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 #if UNITY_EDITOR
-[AddComponentMenu("AKLD/Dev Mixer")]
+[AddComponentMenu("AKLD/AKLD Dev Mixer")]
 [DisallowMultipleComponent]
 public class AKLD_DevMixerGroup : MonoBehaviour
 {

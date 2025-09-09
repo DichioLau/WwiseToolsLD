@@ -1,7 +1,7 @@
 ﻿/*
  * AKLD_HeartbeatModulator.cs
- *
- * Author: Lautaro Dichio
+ * Created by Lautaro Dichio (ldichio.com.ar) | Wwise + Unity helper
+ * 
  * Description:
  * Modulates one or more Wwise RTPCs with a heartbeat-shaped curve that is scaled
  * by player proximity to one or more 3D modulation zones. Each zone can define

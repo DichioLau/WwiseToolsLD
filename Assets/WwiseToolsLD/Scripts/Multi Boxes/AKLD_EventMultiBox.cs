@@ -1,7 +1,7 @@
 /*
  * AKLD_EventMultiBox.cs
+ * Created by Lautaro Dichio (ldichio.com.ar) | Wwise + Unity helper
  * 
- * Author: Lautaro Dichio
  * Description:
  * This script defines and manages multiple 3D box areas in Unity.
  * It triggers Wwise events when a specified GameObject enters or exits each area.

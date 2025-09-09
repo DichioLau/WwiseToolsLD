@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e78fcc535b673f49baa57ef4b894424, type: 3}
   m_Name: 378C174F-6DA1-462E-9B20-82CB755B0745
   m_EditorClassIdentifier: 
-  objectName: Play_Vertical_Interchange_ST
-  id: 1429455491
+  objectName: Play_Vertical_Interchange_SWITCH
+  id: 4174342946
   guid: 378C174F-6DA1-462E-9B20-82CB755B0745
   IsInUserDefinedSoundBank: 1

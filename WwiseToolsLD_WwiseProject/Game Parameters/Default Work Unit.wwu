@@ -27,12 +27,12 @@
 					<ChildrenList>
 						<GameParameter Name="Music" ID="{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="Sfx" ID="{B69073C0-843C-4049-9E84-31BEE89B9542}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>

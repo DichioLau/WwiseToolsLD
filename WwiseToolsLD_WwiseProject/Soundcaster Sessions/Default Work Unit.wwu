@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2F74E7B8-503F-4BFF-BDC1-0A6FEB993998}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{2F74E7B8-503F-4BFF-BDC1-0A6FEB993998}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2F74E7B8-503F-4BFF-BDC1-0A6FEB993998}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{B912B7A5-4F1E-4EAA-9B8C-27FF3A8FEC28}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Vertical_Interchange_SWITCH" ID="{378C174F-6DA1-462E-9B20-82CB755B0745}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Vertical_Interchange_STATE" ID="{CB8C7AFE-8A55-4F61-96EA-83FD7D64ED20}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Music" ID="{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}"/>
+							<Value>65</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Layer_02" ID="{C8F1C833-2AE7-463A-AA88-5D5F1010CBB6}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Layer_03" ID="{424A665D-9100-4A3C-BADD-99431C63C895}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
