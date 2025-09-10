@@ -46,6 +46,9 @@ Episode 1: [AKLD_EventMultiBox](https://youtu.be/WdFs3uQ-2k8)
 | *(more coming soon)*      |                                                                                                                                                  |                                           | 🔜          |
 
 ---
+> 📦 **Note**: All tools (scripts + demo scenes) are already included in the **Unity Package** inside the `PACK` folder.  
+> Import the package into your project to get access to all components and example scenes.
+---
 
 ## 🎮 Demo Scenes
 
