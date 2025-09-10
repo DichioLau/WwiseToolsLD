@@ -1,3 +1,12 @@
+/*
+ * MoveBox.cs
+ * Created by Lautaro Dichio (ldichio.com.ar)
+ * 
+ * Simple demo script that moves a GameObject back and forth on the X axis.
+ * Used in test scenes to provide predictable motion for audio triggers and zones.
+ */
+
+
 using UnityEngine;
 
 public class MoveBox : MonoBehaviour

@@ -1,4 +1,36 @@
-﻿#if UNITY_EDITOR
+﻿/*
+ * AKLD_SOTemplate_Generator.cs
+ * Created by Lautaro Dichio (ldichio.com.ar) | Unity + Wwise Tools
+ * 
+ * PURPOSE
+ * This editor utility automatically generates strongly-typed C# methods 
+ * for all entries inside an `AKLD_SOTemplate` asset (Events, RTPCs, Switches, States).
+ * The goal is to replace string-based lookups with autocompletable method calls, 
+ * giving programmers a safer and faster way to access audio content.
+ * 
+ * WHY
+ * - 🧑‍💻 For programmers: no need to guess names or type strings manually.
+ *   Just call the generated methods with full IntelliSense support.
+ * - 🎚️ For audio teams: mappings can be updated directly in the ScriptableObject 
+ *   without touching code, keeping workflows flexible and safe.
+ * - 🔄 For collaboration: improves communication between audio designers and developers 
+ *   by separating code logic from asset references.
+ * 
+ * HOW
+ * Use the Unity top menu: **Tools → AKLD → Generate Autocomplete**
+ * - "All" → regenerates from every `AKLD_SOTemplate` asset in the project
+ * - "Selection" → regenerates from the currently selected template
+ * 
+ * The generated file is placed in:  
+ * `…/Scripts/Generated/AKLD_SOTemplate_Auto.cs`
+ * 
+ * NOTE
+ * This script runs in the Editor only (`#if UNITY_EDITOR`) and 
+ * should not be included in build players.
+ */
+
+
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 using System.IO;
