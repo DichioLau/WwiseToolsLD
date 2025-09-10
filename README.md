@@ -42,8 +42,21 @@ Episode 1: [AKLD_EventMultiBox](https://youtu.be/WdFs3uQ-2k8)
 | `AKLD_EventMultiBox`      | Define and visualize multiple trigger areas from a single GameObject to trigger Wwise events.                                                    | [Episode 1](https://youtu.be/WdFs3uQ-2k8) | ✅ Available |
 | `AKLD_HeartbeatModulator` | Modulate RTPCs with a heartbeat-shaped curve synced to music bars/beats and weighted by proximity zones.                                         | —                                         | ✅ Available |
 | `AKLD_DevMixer`           | Control global Wwise RTPCs from the Inspector (0–100 knob mapped to \[min..max], per-RTPC mute/solo, master mute). Editor-only for fast testing. | —                                         | ✅ Available |
+| `AKLD_SOTemplate`         | ScriptableObject framework to centralize Wwise references (Events, RTPCs, Switches, States) and call them with full autocomplete in code.        | —                                         | ✅ Available |
 | *(more coming soon)*      |                                                                                                                                                  |                                           | 🔜          |
 
+---
+
+## 🎮 Demo Scenes
+
+To quickly test each tool, the package includes a set of Unity demo scenes:
+
+| Scene Name        | Tool Demonstrated            |
+| ----------------- | ---------------------------- |
+| `1_BoxTrigger`    | `AKLD_EventMultiBox`         |
+| `2_HeartMod`      | `AKLD_HeartbeatModulator`    |
+| `3_DevMixer`      | `AKLD_DevMixer`              |
+| `4_SOTemplate`    | `AKLD_SOTemplate` (+ Hotkeys)|
 
 ---
 
@@ -156,6 +169,71 @@ Perfect for QA/dev when menus aren’t ready or you need quick audio tweaks.
 - **Values look off?** Verify **min/max** matches the RTPC scale (e.g., 0–1 vs 0–100).
 - **Solo not working?** If **any** entry is soloed, all **non-solo** entries are muted.
 - **Component missing in “Add Component”?** Class must be `public` `MonoBehaviour`, file name must match, script not under an `Editor/` folder, and there must be **no compile errors**.
+
+---
+## 🔷 AKLD_SOTemplate
+
+### 🎯 What is it?
+A **ScriptableObject–based framework** to centralize Wwise references (Events, RTPCs, Switches, States) inside Unity.  
+It is designed to give programmers and audio teams a **shared workflow**:
+
+- 🧑‍💻 **For programmers**: every Wwise call becomes an **autocompletable method** in code.  
+  No more guessing strings, typing raw IDs, or risking typos.  
+- 🎚️ **For audio teams**: all mappings (which Event, State, RTPC, or Switch corresponds to each method) can be **changed freely in the asset Inspector**.  
+  No code changes required.  
+- 🔄 **For collaboration**: programmers write stable, type-safe code once, while sound designers and composers can iterate and remap sounds at will.  
+
+### 🚀 Why is this useful?
+Traditionally, integrating Wwise into Unity forces programmers to:
+- Call audio with raw strings like `"Play_Footstep"`  
+- Depend on knowing exact event/RTPC names  
+- Modify code whenever audio assets change  
+
+With `AKLD_SOTemplate` + its **code generator**, you instead:
+1. Define the logical names once inside the ScriptableObject asset.  
+2. Run the generator → it creates C# methods with those names.  
+3. Call those methods directly in code with full **IntelliSense/autocomplete**.  
+4. Re-map Wwise assets later in the Inspector without touching code.  
+
+### 🧰 How to use
+1. Create a new asset via `Assets → Create → AudioLD`.  
+2. Add entries for:
+   - **Events** → Wwise Events you want to trigger  
+   - **RTPCs** → Wwise RTPCs (always global)  
+   - **Switches** → Wwise Switches  
+   - **States** → Wwise States  
+3. Run **Tools → AKLD → Generate Autocomplete** to build the `.Auto.cs` file.  
+4. In your scripts, add a reference to the asset and call methods directly.
+
+### 📜 Example
+
+csharp
+public class PlayerAudio : MonoBehaviour
+{
+    [SerializeField] private AKLD_SOTemplate audio;
+
+    void Step()
+    {
+        audio.Footstep(gameObject);       // Event
+        audio.Speed(gameObject, 50f);     // RTPC (global)
+        audio.Surface(gameObject);        // Switch
+        audio.CombatState(gameObject);    // State
+    }
+}
+
+### 🧪 Demo: AudioHotkeys
+
+To quickly test your setup, the package includes `AudioHotkeys.cs`, a simple script that maps keyboard keys to template calls.  
+This lets you verify your setup without writing custom logic:
+
+- **1 2 3 4** → Trigger example *Events* (`EventNumber1–4`)  
+- **Q W E R** → Change *music layers* via *States* (`Layer1–4`)  
+- **M** → Post the *Music* event  
+- **A S D** → Adjust the *MusicValue* RTPC (global):  
+  - **A** = 100 (loud)  
+  - **S** = 50 (medium)  
+  - **D** = 10 (quiet)  
+
 
 ---
 
