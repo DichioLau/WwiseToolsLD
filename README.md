@@ -54,7 +54,7 @@ To quickly test each tool, the package includes a set of Unity demo scenes:
 | Scene Name        | Tool Demonstrated            |
 | ----------------- | ---------------------------- |
 | `1_BoxTrigger`    | `AKLD_EventMultiBox`         |
-| `2_HeartMod`      | `AKLD_HeartbeatModulator`    |
+| `2_HeartModulator`| `AKLD_HeartbeatModulator`    |
 | `3_DevMixer`      | `AKLD_DevMixer`              |
 | `4_SOTemplate`    | `AKLD_SOTemplate` (+ Hotkeys)|
 
