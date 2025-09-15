@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{CCF0D543-AF9D-96F9-532A-33100F552198}",
+    "Hash": "{767F0F33-1606-6E7F-989D-0C85DDDE4E6A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -59,7 +59,8 @@
       "Id": "393239870",
       "Name": "Sfx",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixer\\Sfx",
-      "GUID": "{B69073C0-843C-4049-9E84-31BEE89B9542}"
+      "GUID": "{B69073C0-843C-4049-9E84-31BEE89B9542}",
+      "Color": "11"
      },
      {
       "Id": "837114063",
@@ -76,10 +77,17 @@
       "Color": "3"
      },
      {
+      "Id": "1822586097",
+      "Name": "MusicTimer",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Timer\\MusicTimer",
+      "GUID": "{FF70A819-BDFE-484E-9D2D-E015D6E08B10}"
+     },
+     {
       "Id": "3991942870",
       "Name": "Music",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixer\\Music",
-      "GUID": "{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}"
+      "GUID": "{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}",
+      "Color": "11"
      }
     ],
     "StateGroups": [
@@ -128,6 +136,9 @@
       "Name": "Music",
       "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music",
       "GUID": "{85CB16AD-7BBD-43DE-A2B3-91C27C360891}",
+      "GameParameterRef": {
+       "Id": "1822586097"
+      },
       "Switches": [
        {
         "Id": "1126787299",
@@ -158,6 +169,6 @@
     ]
    }
   ],
-  "FileHash": "{100C2676-9E7D-3A60-C1F0-B7D0D7395D03}"
+  "FileHash": "{ACA97B68-60BF-CC5E-B266-409D4E9EBDC2}"
  }
 }

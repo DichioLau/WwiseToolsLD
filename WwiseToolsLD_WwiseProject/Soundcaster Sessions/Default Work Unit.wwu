@@ -16,15 +16,19 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="MusicTimer" ID="{FF70A819-BDFE-484E-9D2D-E015D6E08B10}"/>
+							<Value>40</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Music" ID="{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}"/>
 							<Value>65</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Layer_02" ID="{C8F1C833-2AE7-463A-AA88-5D5F1010CBB6}"/>
+						<CurrentStateRef Name="None" ID="{95978439-D71A-46AC-99A7-5082E4E289E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Layer_03" ID="{424A665D-9100-4A3C-BADD-99431C63C895}"/>
+						<CurrentSwitchRef Name="Layer_01" ID="{7BA7AD59-66F1-4B51-A677-805DD3B3C0B2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

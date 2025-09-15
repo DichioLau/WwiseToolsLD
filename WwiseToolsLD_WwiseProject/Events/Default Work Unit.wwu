@@ -207,6 +207,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="5 Timer" ID="{CD0CFD8F-E0C4-4FE3-BB21-0B501F8DF975}" ShortID="844698060">
+					<ChildrenList>
+						<Event Name="Play_Vertical_Interchange_SW_TIMER" ID="{828B761C-A6ED-4366-B5AD-B1E6C8106CF2}">
+							<ChildrenList>
+								<Action Name="" ID="{B2AC8C9F-BB4D-41FA-8AA4-E575687AB632}" ShortID="812986349">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Vertical-Interchange_SW_TIMER" ID="{9A4E72E5-133C-477F-87D6-EE5B35F22EAF}" WorkUnitID="{E6CF9B95-2147-497E-BF9C-DC4D39A6549E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

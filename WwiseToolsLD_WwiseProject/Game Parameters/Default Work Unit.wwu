@@ -27,12 +27,25 @@
 					<ChildrenList>
 						<GameParameter Name="Music" ID="{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="11"/>
 								<Property Name="InitialValue" Type="Real64" Value="75"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="Sfx" ID="{B69073C0-843C-4049-9E84-31BEE89B9542}">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="11"/>
 								<Property Name="InitialValue" Type="Real64" Value="75"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Timer" ID="{E3C0A7D2-45DC-4AAA-AEAC-A67F4BFFC1CC}" ShortID="111929638">
+					<ChildrenList>
+						<GameParameter Name="MusicTimer" ID="{FF70A819-BDFE-484E-9D2D-E015D6E08B10}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>

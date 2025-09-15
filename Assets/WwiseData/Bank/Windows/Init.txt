@@ -1,3 +1,12 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music\Music	
+
+Switch	ID	Name	Switch Group			Notes
+	1126787299	Layer_04	Music			
+	1126787300	Layer_03	Music			
+	1126787301	Layer_02	Music			
+	1126787302	Layer_01	Music			
+
 State Group	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Music	
 

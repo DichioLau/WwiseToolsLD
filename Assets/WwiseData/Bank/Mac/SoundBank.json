@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{8AB65D46-CFEB-4ABF-B717-D84D390B748C}",
     "Language": "SFX",
-    "Hash": "{D02BCCC2-EDA3-D89A-4B29-9DABEBA1C52B}",
+    "Hash": "{905C3557-4D6D-E204-9706-363C6DAD48A2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank",
     "ShortName": "SoundBank",
     "Path": "SoundBank.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "Dron_Synth_4.wav",
       "CachePath": "85/{85A9049D-2676-23DE-2B8D-17EDE4AB751E}.wem"
+     },
+     {
+      "Id": "119275560",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_samba2_stem_05.wav",
+      "CachePath": "09/{09E6DBF5-6BDB-5A82-5071-8294ECC57FBD}.wem"
      },
      {
       "Id": "131473197",
@@ -284,6 +292,39 @@
       ]
      },
      {
+      "Id": "1130161598",
+      "Name": "Play_Vertical_Interchange_SW_TIMER",
+      "ObjectPath": "\\Events\\Default Work Unit\\5 Timer\\Play_Vertical_Interchange_SW_TIMER",
+      "GUID": "{828B761C-A6ED-4366-B5AD-B1E6C8106CF2}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "119275560"
+       },
+       {
+        "Id": "131473197"
+       },
+       {
+        "Id": "224358471"
+       },
+       {
+        "Id": "228152782"
+       },
+       {
+        "Id": "268302885"
+       },
+       {
+        "Id": "700173175"
+       },
+       {
+        "Id": "997997753"
+       },
+       {
+        "Id": "1017816269"
+       }
+      ]
+     },
+     {
       "Id": "4174342946",
       "Name": "Play_Vertical_Interchange_SWITCH",
       "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_Vertical_Interchange_SWITCH",
@@ -491,7 +532,8 @@
       "Id": "393239870",
       "Name": "Sfx",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixer\\Sfx",
-      "GUID": "{B69073C0-843C-4049-9E84-31BEE89B9542}"
+      "GUID": "{B69073C0-843C-4049-9E84-31BEE89B9542}",
+      "Color": "11"
      },
      {
       "Id": "837114063",
@@ -508,10 +550,17 @@
       "Color": "3"
      },
      {
+      "Id": "1822586097",
+      "Name": "MusicTimer",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Timer\\MusicTimer",
+      "GUID": "{FF70A819-BDFE-484E-9D2D-E015D6E08B10}"
+     },
+     {
       "Id": "3991942870",
       "Name": "Music",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixer\\Music",
-      "GUID": "{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}"
+      "GUID": "{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}",
+      "Color": "11"
      }
     ],
     "StateGroups": [
@@ -560,6 +609,9 @@
       "Name": "Music",
       "ObjectPath": "\\Switches\\Default Work Unit\\Music\\Music",
       "GUID": "{85CB16AD-7BBD-43DE-A2B3-91C27C360891}",
+      "GameParameterRef": {
+       "Id": "1822586097"
+      },
       "Switches": [
        {
         "Id": "1126787299",
@@ -590,6 +642,6 @@
     ]
    }
   ],
-  "FileHash": "{87875DA9-233D-9E28-EBC0-EF116004D3CB}"
+  "FileHash": "{61377DC9-37A0-B90A-1B7F-E64A43C17B8C}"
  }
 }

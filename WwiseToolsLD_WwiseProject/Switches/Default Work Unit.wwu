@@ -6,12 +6,65 @@
 				<Folder Name="Music" ID="{5EE68EEE-6EDB-4686-834B-C29997A64B40}" ShortID="439480633">
 					<ChildrenList>
 						<SwitchGroup Name="Music" ID="{85CB16AD-7BBD-43DE-A2B3-91C27C360891}">
+							<PropertyList>
+								<Property Name="UseGameParameter" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<Switch Name="Layer_01" ID="{7BA7AD59-66F1-4B51-A677-805DD3B3C0B2}"/>
 								<Switch Name="Layer_02" ID="{8524CDF3-30AD-44EE-A20C-2BFF6C597D17}"/>
 								<Switch Name="Layer_03" ID="{424A665D-9100-4A3C-BADD-99431C63C895}"/>
 								<Switch Name="Layer_04" ID="{56348E91-1626-46EE-9B1A-684C5FEF84E1}"/>
 							</ChildrenList>
+							<SwitchOnRTPC>
+								<GameParameterRef Name="MusicTimer" ID="{FF70A819-BDFE-484E-9D2D-E015D6E08B10}"/>
+								<Curve Name="" ID="{43DAF4DB-9084-4966-AE3A-93D4C470632E}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>0.001</XPos>
+											<YPos>1</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>23.95916</XPos>
+											<YPos>2</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>44.8546739984289</XPos>
+											<YPos>2</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>49.6465</XPos>
+											<YPos>3</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>79.18303</XPos>
+											<YPos>3</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>79.57681</XPos>
+											<YPos>4</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>100</XPos>
+											<YPos>4</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</SwitchOnRTPC>
 						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
