@@ -43,7 +43,8 @@ Episode 1: [AKLD_EventMultiBox](https://youtu.be/WdFs3uQ-2k8)
 | `AKLD_HeartbeatModulator` | Modulate RTPCs with a heartbeat-shaped curve synced to music bars/beats and weighted by proximity zones.                                         | —                                         | ✅ Available |
 | `AKLD_DevMixer`           | Control global Wwise RTPCs from the Inspector (0–100 knob mapped to \[min..max], per-RTPC mute/solo, master mute). Editor-only for fast testing. | —                                         | ✅ Available |
 | `AKLD_SOTemplate`         | ScriptableObject framework to centralize Wwise references (Events, RTPCs, Switches, States) and call them with full autocomplete in code.        | —                                         | ✅ Available |
-| *(more coming soon)*      |                                                                                                                                                  |                                           | 🔜          |
+| `AKLD_TimerRTPC`          | Control a Wwise RTPC over time using customizable intervals, sum/subtract operations, and manual configuration of start/target values.           | —                                         | ✅ Available |
+| *(more coming soon)*      |                                                                                                                                                  |                                           | 🔜           |
 
 ---
 > 📦 **Note**: All tools (scripts + demo scenes) are already included in the **Unity Package** inside the `PACK` folder.  
@@ -60,6 +61,8 @@ To quickly test each tool, the package includes a set of Unity demo scenes:
 | `2_HeartModulator`| `AKLD_HeartbeatModulator`    |
 | `3_DevMixer`      | `AKLD_DevMixer`              |
 | `4_SOTemplate`    | `AKLD_SOTemplate` (+ Hotkeys)|
+| `5_TimerRTPC`     | `AKLD_TimerRTPC`             |
+
 
 ---
 
@@ -235,8 +238,50 @@ This lets you verify your setup without writing custom logic:
 - **A S D** → Adjust the *MusicValue* RTPC (global):  
   - **A** = 100 (loud)  
   - **S** = 50 (medium)  
-  - **D** = 10 (quiet)  
+  - **D** = 10 (quiet)
+ 
+---
 
+## 🔷 AKLD_TimerRTPC
+
+### 🎯 What is it?
+A MonoBehaviour that lets you control **one shared Wwise RTPC** over time by using **multiple 3D boxes** in the scene.  
+When the tracked object enters a box, the RTPC begins to change in timed steps (incrementing or decrementing).  
+When the object exits, the RTPC moves toward a defined exit target value. Only one box has ownership at a time, so values never jump when switching areas.
+
+- 📦 Multiple oriented boxes (position, rotation, size, color)
+- ➕➖ Step-based **increment/decrement** on enter
+- 🎯 Optional **target values** for enter and exit
+- 🌍 Apply RTPC globally or to specific GameObjects (configurable TargetMode)
+- 👁️ Full Scene gizmos + handles to move, rotate, and scale boxes visually
+- 🧪 Shared runtime value ensures **smooth continuity** across all boxes
+
+### 🚀 Use Cases
+- Gradually increase/decrease an RTPC when the player enters or leaves an area (e.g., filter, intensity, ambience layer).
+- Smooth fade to a target value once leaving a defined zone.
+- Centralize control of a **single RTPC** across multiple trigger regions without risk of jumps.
+
+### 🧰 How to use
+1. Add the `AKLD_TimerRTPC` component to a GameObject.  
+2. Assign the **RTPC** you want to control.  
+3. Set global parameters:
+   - `minValue` / `maxValue` (range clamp)  
+   - `initialValue` (starting RTPC value)  
+   - `targetMode` (Global, ThisGameObject, ObjectToCheck, OtherGameObject)  
+4. Add **boxes** to the `Boxes` list and configure each:  
+   - **Enter**: operation (Sum/Subtract), increment size & interval, optional target.  
+   - **Exit**: operation, target value, increment size & interval.  
+5. Use Scene view handles to position, rotate, and scale each box.  
+6. Press Play and watch the RTPC smoothly transition as you enter/exit areas.
+
+> ⚠️ Notes  
+> • Only one box controls the RTPC at a time (first-come-wins).  
+> • Enter without target = keep stepping until hitting min/max.  
+> • Enter/Exit with target = step with `MoveTowards` until reaching the goal.  
+> • Requires `AkGameObj` if applied to per-object RTPCs.  
+
+### 🧪 Demo Scene
+Open **`5_TimerRTPC`** for a ready-to-test setup, with boxes, gizmos, and values preconfigured.
 
 ---
 
