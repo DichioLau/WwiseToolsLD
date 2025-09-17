@@ -44,6 +44,8 @@ Episode 1: [AKLD_EventMultiBox](https://youtu.be/WdFs3uQ-2k8)
 | `AKLD_DevMixer`           | Control global Wwise RTPCs from the Inspector (0–100 knob mapped to \[min..max], per-RTPC mute/solo, master mute). Editor-only for fast testing. | —                                         | ✅ Available |
 | `AKLD_SOTemplate`         | ScriptableObject framework to centralize Wwise references (Events, RTPCs, Switches, States) and call them with full autocomplete in code.        | —                                         | ✅ Available |
 | `AKLD_TimerRTPC`          | Control a Wwise RTPC over time using customizable intervals, sum/subtract operations, and manual configuration of start/target values.           | —                                         | ✅ Available |
+| `AKLD_DistanceBetweenObjects`| Calculates distance between two objects (X, Y, Z, or 3D) and maps it to a Wwise RTPC with optional remap curve, inverse mode, and debug gizmos. | —                                         | ✅ Available |
+| `AKLD_DBMultipleGO`          | Multi-target distance system: selects the closest target (with hysteresis, dwell time, direction bias, and crossfade) and maps distance to RTPC.| —                                         | ✅ Available |
 | *(more coming soon)*      |                                                                                                                                                  |                                           | 🔜           |
 
 ---
@@ -62,6 +64,8 @@ To quickly test each tool, the package includes a set of Unity demo scenes:
 | `3_DevMixer`      | `AKLD_DevMixer`              |
 | `4_SOTemplate`    | `AKLD_SOTemplate` (+ Hotkeys)|
 | `5_TimerRTPC`     | `AKLD_TimerRTPC`             |
+| `6_DistanceBetweenGO`  | `AKLD_DistanceBetweenObjects` |
+| `7_DistanceBetweenMultGO` | `AKLD_DBMultipleGO`        |
 
 
 ---
@@ -282,6 +286,85 @@ When the object exits, the RTPC moves toward a defined exit target value. Only o
 
 ### 🧪 Demo Scene
 Open **`5_TimerRTPC`** for a ready-to-test setup, with boxes, gizmos, and values preconfigured.
+
+---
+
+## 🔷 AKLD_DistanceBetweenObjects
+
+### 🎯 What is it?
+A MonoBehaviour that calculates the **distance between two objects** (X, Y, Z, or full 3D)  
+and maps that distance into a **Wwise RTPC** value.  
+
+- 📏 Axis selection → X, Y, Z, or 3D distance  
+- 🔄 Two behavior modes: **NearIsMin** (closer = lower RTPC) or **NearIsMax** (closer = higher RTPC)  
+- 🎚️ Optional remap with **AnimationCurve** and configurable `[inputMin..inputMax] → [outputMin..outputMax]`  
+- 👁️ Scene gizmos with line, spheres, axis projection (optional), and distance label  
+
+### 🚀 Use Cases
+- Control **filter cutoff**, **reverb send**, or **music intensity** based on distance between objects.  
+- Implement dynamic SFX (e.g., volume or pitch) that scale with how close two entities are.  
+- Quick prototyping of **distance-based behaviors** without complex trigger volumes.  
+
+### 🧰 How to use
+1. Add the `AKLD_DistanceBetweenObjects` component to a GameObject.  
+2. Assign **Object1** and **Object2** (any Transforms).  
+3. Assign the **Wwise RTPC** you want to drive.  
+4. Configure:  
+   - `axisDistance`: X, Y, Z, or All (3D).  
+   - `inputMin / inputMax`: expected Unity distances.  
+   - `outputMin / outputMax`: target RTPC range.  
+   - `distanceMode`: choose NearIsMin or NearIsMax.  
+   - `remapCurve`: shape how the RTPC responds (linear, log, exp, custom).  
+5. Enable **Gizmos** in the Scene to visualize distance lines and debug labels.  
+6. Press Play: the RTPC updates in real time as the objects move.  
+
+### 🧪 Demo Scene
+Open **`6_DistanceBetweenGO`** to test distance mapping between two cubes.  
+Move them closer/further to see gizmos update and hear the RTPC value in Wwise.
+
+---
+
+## 🔷 AKLD_DBMultipleGO
+
+### 🎯 What is it?
+A MonoBehaviour that measures distance from a **main object (A)** to **multiple targets**  
+and drives a single **Wwise RTPC** without jumps.  
+
+- 🎯 Selects one **“owner” target** with **Nearest Sticky logic**: hysteresis + dwell time + direction bias  
+- 🔄 Smooth transitions with **crossfade** and optional **rate limit** (MaxChangePerSecond)  
+- 📏 Each target has its own **[inputMin..inputMax]** distance range for normalization  
+- 🎚️ Remap distance via **AnimationCurve** into a global `[outputMin..outputMax]` RTPC range  
+- 👁️ Scene gizmos:  
+  - **Red** = target out of range  
+  - **Green** = in range  
+  - **Yellow** = current controlling target  
+  - Labels show distance, normalized t, RTPC value, and target range  
+
+### 🚀 Use Cases
+- Complex setups where **one RTPC** should follow the closest relevant object  
+  (e.g., nearest hazard, NPC, sound source).  
+- Dynamic **music/sfx intensity** that shifts focus smoothly between multiple objects.  
+- Prototyping **multi-zone distance logic** without custom trigger scripting.  
+
+### 🧰 How to use
+1. Add the `AKLD_DBMultipleGO` component to a GameObject.  
+2. Assign **Object A** (the moving object to track).  
+3. In **Targets**, add entries:  
+   - Assign the **target Transform**  
+   - Set per-target `inputMin / inputMax` (Unity distance range)  
+4. Assign the **Wwise RTPC** to control.  
+5. Configure global parameters:  
+   - `distanceMode`: NearIsMin or NearIsMax  
+   - `remapCurve` + `outputMin / outputMax` for RTPC mapping  
+   - `hysteresisPercent`, `minDwellTime`, `crossfadeTime` for smooth ownership changes  
+   - `maxChangePerSecond` for global smoothing  
+6. Enable **Gizmos** to debug lines, colors, and labels.  
+7. Press Play: as Object A moves, ownership shifts smoothly between nearest targets.  
+
+### 🧪 Demo Scene
+Open **`7_DistanceBetweenMultGO`** to test with multiple cubes.  
+Move Object A around and watch gizmos switch ownership (yellow)  
+while Wwise receives a continuous, smoothed RTPC value.
 
 ---
 
