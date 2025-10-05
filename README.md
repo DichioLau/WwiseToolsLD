@@ -46,7 +46,10 @@ Episode 1: [AKLD_EventMultiBox](https://youtu.be/WdFs3uQ-2k8)
 | `AKLD_TimerRTPC`          | Control a Wwise RTPC over time using customizable intervals, sum/subtract operations, and manual configuration of start/target values.           | —                                         | ✅ Available |
 | `AKLD_DistanceBetweenObjects`| Calculates distance between two objects (X, Y, Z, or 3D) and maps it to a Wwise RTPC with optional remap curve, inverse mode, and debug gizmos. | —                                         | ✅ Available |
 | `AKLD_DBMultipleGO`          | Multi-target distance system: selects the closest target (with hysteresis, dwell time, direction bias, and crossfade) and maps distance to RTPC.| —                                         | ✅ Available |
+| `AKLD_GameObjectReader`   | Casts a configurable ray to detect GameObjects in the scene and trigger Wwise Events On Enter / On Exit. Supports instance or prefab-based detection, with full debug visualization in Scene/Game view. | — | ✅ Available |
 | *(more coming soon)*      |                                                                                                                                                  |                                           | 🔜           |
+
+
 
 ---
 > 📦 **Note**: All tools (scripts + demo scenes) are already included in the **Unity Package** inside the `PACK` folder.  
@@ -66,6 +69,7 @@ To quickly test each tool, the package includes a set of Unity demo scenes:
 | `5_TimerRTPC`     | `AKLD_TimerRTPC`             |
 | `6_DistanceBetweenGO`  | `AKLD_DistanceBetweenObjects` |
 | `7_DistanceBetweenMultGO` | `AKLD_DBMultipleGO`        |
+| `8_OBJReader` | `AKLD_GameObjectReader`        |
 
 
 ---
@@ -367,7 +371,48 @@ Move Object A around and watch gizmos switch ownership (yellow)
 while Wwise receives a continuous, smoothed RTPC value.
 
 ---
+## 🔷 AKLD_GameObjectReader
 
+### 🎯 What is it?
+A MonoBehaviour that casts a **ray** from any GameObject and triggers **Wwise events** when the ray enters or exits another object.  
+Each entry in its list of **Checkers** defines which objects to react to — either a **specific scene instance** or **all instances of a prefab**.  
+It’s a flexible way to make the sound react to what the player (or camera) is looking at, touching, or scanning in front of them.
+
+- 🔦 Configurable **direction** (Forward, Back, Left, Right, Up, Down)
+- 📏 Adjustable **max distance**
+- 🎚️ Checker-based system → reacts to **Instance** or **Prefab All Instances**
+- 🎵 Triggers **Event On Enter** and **Event On Exit**
+- 👁️ Optional **debug ray** in Scene and Game view
+- 🎥 Optional **camera-based direction**
+
+### 🚀 Use Cases
+- Trigger a sound when the player looks at or aims at an object.  
+- Play contextual audio when entering or leaving the sight of a certain target.  
+- Build gaze-based or proximity-based interactions without manual scripting.  
+- Drive ambience or UI feedback using simple ray detection.
+
+### 🧰 How to use
+1. Add the `AKLD_GameObjectReader` component to any GameObject (e.g., Player, Camera).  
+2. Set **Direction** and **Max Distance**.  
+3. In **Checkers**, add entries for each target:  
+   - `Match Mode`: choose *Instance Only* or *Prefab All Instances*.  
+   - Assign the **Instance** or **Prefab Reference**.  
+   - Choose if the event posts on **this object** or on the **hit object**.  
+   - Assign your **Wwise Event On Enter** and **Event On Exit**.  
+4. Enable **Show Raycast** to visualize the detection line.  
+5. Press Play and watch (and hear) the events fire as the ray enters or exits valid targets.
+
+> ⚠️ Notes  
+> • Works with both static and moving objects.  
+> • Only one event pair triggers per checker at a time.  
+> • Perfect for dynamic “look-at” or “scan” systems tied to audio feedback.  
+
+### 🧪 Demo Scene
+Open **`8_GameObjectReader`** to test ray-based object detection and Wwise event triggers.  
+Move the player or camera and observe how each object reacts sonically when detected.
+
+
+---
 ## 📬 Contact
 
 Have questions, ideas, or a collab in mind? Let’s talk! 🙌
