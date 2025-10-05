@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{8AB65D46-CFEB-4ABF-B717-D84D390B748C}",
     "Language": "SFX",
-    "Hash": "{905C3557-4D6D-E204-9706-363C6DAD48A2}",
+    "Hash": "{016DD277-B21E-B780-E65F-C0BD77D99EF7}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank",
     "ShortName": "SoundBank",
     "Path": "SoundBank.bnk",
@@ -160,7 +160,59 @@
       "CachePath": "D4/{D4213BE4-E7BD-A956-3165-836E0635F1F1}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3487820010",
+       "Name": "One_Tap_Half_Second",
+       "ObjectPath": "\\Effects\\Factory Effects\\Delay\\One_Tap_Half_Second",
+       "GUID": "{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}",
+       "LibName": "Wwise Delay",
+       "LibId": "6946819"
+      }
+     ]
+    },
     "Events": [
+     {
+      "Id": "1769415224",
+      "Name": "HM",
+      "ObjectPath": "\\Events\\Default Work Unit\\6 Distance\\HM",
+      "GUID": "{A5556CE8-5014-456C-98A5-B52DC837E337}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "5640895",
+      "Name": "ObjToCheck0",
+      "ObjectPath": "\\Events\\Default Work Unit\\8 OBCHECK\\ObjToCheck0",
+      "GUID": "{10354B92-ADD4-4EE7-9612-D4605F633F8B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2444776750",
+      "Name": "ObjToCheck100",
+      "ObjectPath": "\\Events\\Default Work Unit\\8 OBCHECK\\ObjToCheck100",
+      "GUID": "{6FFAA7C3-384F-4E3A-A448-7C9756E9E5B0}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1065318301",
+      "Name": "ObjToCheck75",
+      "ObjectPath": "\\Events\\Default Work Unit\\8 OBCHECK\\ObjToCheck75",
+      "GUID": "{2442AC83-921C-4A47-B073-7520A5E8D9FC}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
      {
       "Id": "3032972107",
       "Name": "Play_SfxTest",
@@ -262,6 +314,37 @@
       ]
      },
      {
+      "Id": "941004305",
+      "Name": "Play_Vertical_Heart_A",
+      "ObjectPath": "\\Events\\Default Work Unit\\6 Distance\\Play_Vertical_Heart_A",
+      "GUID": "{94D1F23D-4D25-4AD1-8784-F5542A907FCC}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "5048769"
+       },
+       {
+        "Id": "211732998"
+       },
+       {
+        "Id": "284358010"
+       },
+       {
+        "Id": "383000394"
+       },
+       {
+        "Id": "1051141139"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3487820010"
+        }
+       ]
+      }
+     },
+     {
       "Id": "2972393169",
       "Name": "Play_Vertical_Interchange_STATE",
       "ObjectPath": "\\Events\\Default Work Unit\\1\\Play_Vertical_Interchange_STATE",
@@ -296,6 +379,39 @@
       "Name": "Play_Vertical_Interchange_SW_TIMER",
       "ObjectPath": "\\Events\\Default Work Unit\\5 Timer\\Play_Vertical_Interchange_SW_TIMER",
       "GUID": "{828B761C-A6ED-4366-B5AD-B1E6C8106CF2}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "119275560"
+       },
+       {
+        "Id": "131473197"
+       },
+       {
+        "Id": "224358471"
+       },
+       {
+        "Id": "228152782"
+       },
+       {
+        "Id": "268302885"
+       },
+       {
+        "Id": "700173175"
+       },
+       {
+        "Id": "997997753"
+       },
+       {
+        "Id": "1017816269"
+       }
+      ]
+     },
+     {
+      "Id": "3376261752",
+      "Name": "Play_Vertical_Interchange_SW_TIMERB",
+      "ObjectPath": "\\Events\\Default Work Unit\\6 Distance\\Play_Vertical_Interchange_SW_TIMERB",
+      "GUID": "{0E266AEF-B6BD-4F02-A010-189AE8D78C51}",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -505,6 +621,21 @@
         "GUID": "{56348E91-1626-46EE-9B1A-684C5FEF84E1}"
        }
       ]
+     },
+     {
+      "Id": "2805738039",
+      "Name": "Stop_UI_WID_Numers_004",
+      "ObjectPath": "\\Events\\Default Work Unit\\8 OBCHECK\\Stop_UI_WID_Numers_004",
+      "GUID": "{DD5A8386-0DA8-4B95-B4C5-E06363BDF6FA}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
+       {
+        "Id": "209230691"
+       }
+      ]
      }
     ],
     "Busses": [
@@ -536,6 +667,12 @@
       "Color": "11"
      },
      {
+      "Id": "454654130",
+      "Name": "OBCHECK",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\8 OBJ\\OBCHECK",
+      "GUID": "{512185F4-91EB-4D16-9CCB-07D611B1E4A5}"
+     },
+     {
       "Id": "837114063",
       "Name": "AKLD_HEART_BEAT",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\HeartBeat\\AKLD_HEART_BEAT",
@@ -548,6 +685,18 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\HeartBeat\\AKLD_HEART",
       "GUID": "{49838DEA-47C0-4BBC-A8FA-858EB63384B3}",
       "Color": "3"
+     },
+     {
+      "Id": "1730564736",
+      "Name": "MusicB",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\6 Distance\\MusicB",
+      "GUID": "{E2805886-FCFD-44A4-99F9-4EF875943C6D}"
+     },
+     {
+      "Id": "1730564739",
+      "Name": "MusicA",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\6 Distance\\MusicA",
+      "GUID": "{54573DBC-A5C2-4EDA-A712-85F80FEBC0BD}"
      },
      {
       "Id": "1822586097",
@@ -642,6 +791,6 @@
     ]
    }
   ],
-  "FileHash": "{821C277B-7DE7-3863-F112-E3BD3B8F5248}"
+  "FileHash": "{F5794253-08A0-B0CA-5FB6-D89008662F93}"
  }
 }

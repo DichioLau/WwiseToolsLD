@@ -4,14 +4,6 @@ using UnityEngine;
 
 public partial class AKLD_SOTemplate
 {
-	// Events — from asset: Hola
-
-	// RTPCs — from asset: Hola
-
-	// Switches — from asset: Hola
-
-	// States — from asset: Hola
-
 	// Events — from asset: SOAudioTest
 	public void EventTest(GameObject emitter) => GetEventComponent("EventTest")?.Post(emitter);
 	public void EventTest2(GameObject emitter) => GetEventComponent("EventTest2")?.Post(emitter);

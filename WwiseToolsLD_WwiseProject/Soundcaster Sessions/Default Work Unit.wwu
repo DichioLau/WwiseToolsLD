@@ -6,29 +6,73 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{B912B7A5-4F1E-4EAA-9B8C-27FF3A8FEC28}">
 					<ModuleList>
 						<Module>
+							<ObjectRef Name="ObjToCheck0" ID="{10354B92-ADD4-4EE7-9612-D4605F633F8B}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Vertical_Interchange_SWITCH" ID="{378C174F-6DA1-462E-9B20-82CB755B0745}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Vertical_Heart_A" ID="{94D1F23D-4D25-4AD1-8784-F5542A907FCC}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ObjToCheck75" ID="{2442AC83-921C-4A47-B073-7520A5E8D9FC}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Vertical_Interchange_STATE" ID="{CB8C7AFE-8A55-4F61-96EA-83FD7D64ED20}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
 							<Position X="2" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Vertical_Interchange_SW_TIMERB" ID="{0E266AEF-B6BD-4F02-A010-189AE8D78C51}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ObjToCheck100" ID="{6FFAA7C3-384F-4E3A-A448-7C9756E9E5B0}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_UI_WID_Numers_004" ID="{DD5A8386-0DA8-4B95-B4C5-E06363BDF6FA}" WorkUnitID="{B61ADA86-6F6B-4762-B9E2-5C0986EB4F35}"/>
+							<Position X="3" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="MusicB" ID="{E2805886-FCFD-44A4-99F9-4EF875943C6D}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="MusicTimer" ID="{FF70A819-BDFE-484E-9D2D-E015D6E08B10}"/>
-							<Value>40</Value>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="AKLD_HEART" ID="{49838DEA-47C0-4BBC-A8FA-858EB63384B3}"/>
+							<Value>0.97</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Music" ID="{23516002-9C8A-4C1C-B2C8-6F2D85CF7C76}"/>
-							<Value>65</Value>
+							<Value>79</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="OBCHECK" ID="{512185F4-91EB-4D16-9CCB-07D611B1E4A5}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicA" ID="{54573DBC-A5C2-4EDA-A712-85F80FEBC0BD}"/>
+							<Value>19.8935140367861</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="AKLD_HEART_BEAT" ID="{4A7A8601-14F0-4FF1-8021-33429EF3F46A}"/>
+							<Value>0.99</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{95978439-D71A-46AC-99A7-5082E4E289E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Layer_01" ID="{7BA7AD59-66F1-4B51-A677-805DD3B3C0B2}"/>
+						<CurrentSwitchRef Name="Layer_03" ID="{424A665D-9100-4A3C-BADD-99431C63C895}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

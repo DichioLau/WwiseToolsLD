@@ -13,14 +13,20 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID HM = 1769415224U;
+        static const AkUniqueID OBJTOCHECK0 = 5640895U;
+        static const AkUniqueID OBJTOCHECK75 = 1065318301U;
+        static const AkUniqueID OBJTOCHECK100 = 2444776750U;
         static const AkUniqueID PLAY_SFXTEST = 3032972107U;
         static const AkUniqueID PLAY_UI_WID_NUMERS_001 = 3707049636U;
         static const AkUniqueID PLAY_UI_WID_NUMERS_002 = 3707049639U;
         static const AkUniqueID PLAY_UI_WID_NUMERS_003 = 3707049638U;
         static const AkUniqueID PLAY_UI_WID_NUMERS_004 = 3707049633U;
         static const AkUniqueID PLAY_VERTICAL_HEART = 322259349U;
+        static const AkUniqueID PLAY_VERTICAL_HEART_A = 941004305U;
         static const AkUniqueID PLAY_VERTICAL_INTERCHANGE_STATE = 2972393169U;
         static const AkUniqueID PLAY_VERTICAL_INTERCHANGE_SW_TIMER = 1130161598U;
+        static const AkUniqueID PLAY_VERTICAL_INTERCHANGE_SW_TIMERB = 3376261752U;
         static const AkUniqueID PLAY_VERTICAL_INTERCHANGE_SWITCH = 4174342946U;
         static const AkUniqueID SET_STATE_LAYER_01 = 2850775519U;
         static const AkUniqueID SET_STATE_LAYER_02 = 2850775516U;
@@ -30,6 +36,7 @@ namespace AK
         static const AkUniqueID SET_SWITCH_LAYER_02 = 3925293201U;
         static const AkUniqueID SET_SWITCH_LAYER_03 = 3925293200U;
         static const AkUniqueID SET_SWITCH_LAYER_04 = 3925293207U;
+        static const AkUniqueID STOP_UI_WID_NUMERS_004 = 2805738039U;
     } // namespace EVENTS
 
     namespace STATES
@@ -72,7 +79,10 @@ namespace AK
         static const AkUniqueID AKLD_HEART = 913938608U;
         static const AkUniqueID AKLD_HEART_BEAT = 837114063U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSICA = 1730564739U;
+        static const AkUniqueID MUSICB = 1730564736U;
         static const AkUniqueID MUSICTIMER = 1822586097U;
+        static const AkUniqueID OBCHECK = 454654130U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace GAME_PARAMETERS
 

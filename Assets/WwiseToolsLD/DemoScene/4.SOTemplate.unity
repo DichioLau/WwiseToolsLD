@@ -1488,6 +1488,8 @@ GameObject:
   - component: {fileID: 1126607099}
   - component: {fileID: 1126607103}
   - component: {fileID: 1126607101}
+  - component: {fileID: 1126607105}
+  - component: {fileID: 1126607104}
   m_Layer: 0
   m_Name: Test SO Template
   m_TagString: Untagged
@@ -1572,6 +1574,32 @@ MonoBehaviour:
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1126607104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126607098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c7faf69735ef8a469b8146c4a2c64e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Avacon: {fileID: 11400000, guid: fa3570ee789d3b34988a065d2d2058c3, type: 2}
+--- !u!114 &1126607105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126607098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f0fe510e78ed94ab71dd8a870034de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Avacon: {fileID: 0}
 --- !u!1001 &1221041499
 PrefabInstance:
   m_ObjectHideFlags: 0

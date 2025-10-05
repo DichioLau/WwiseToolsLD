@@ -44,6 +44,7 @@ using UnityEditor;
 #endif
 using Debug = UnityEngine.Debug;
 
+[AddComponentMenu("AKLD/AKLD Timer RTPC")]
 public class AKLD_TimerRTPC : MonoBehaviour
 {
     // ==============================

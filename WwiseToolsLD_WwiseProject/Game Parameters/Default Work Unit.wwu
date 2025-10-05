@@ -50,6 +50,29 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="6 Distance" ID="{C80F7959-A5EC-40F6-A6F2-8C205D712555}" ShortID="139789829">
+					<ChildrenList>
+						<GameParameter Name="MusicA" ID="{54573DBC-A5C2-4EDA-A712-85F80FEBC0BD}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="MusicB" ID="{E2805886-FCFD-44A4-99F9-4EF875943C6D}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="8 OBJ" ID="{331832CF-940F-47B9-8C93-7A6D3EF37EE0}" ShortID="555110001">
+					<ChildrenList>
+						<GameParameter Name="OBCHECK" ID="{512185F4-91EB-4D16-9CCB-07D611B1E4A5}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

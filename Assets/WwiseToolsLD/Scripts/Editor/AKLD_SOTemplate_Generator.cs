@@ -22,7 +22,7 @@
  * - "Selection" → regenerates from the currently selected template
  * 
  * The generated file is placed in:  
- * `…/Scripts/Generated/AKLD_SOTemplate_Auto.cs`
+ * `…/Scripts/Generated/AKLD_SOTemplate_<TemplateName>_Auto.cs`
  * 
  * NOTE
  * This script runs in the Editor only (`#if UNITY_EDITOR`) and 
@@ -46,17 +46,23 @@ public static class AKLD_SOTemplate_Generator
     [MenuItem("Tools/AKLD/Generate Autocomplete (All)")]
     public static void GenerateFromAllTemplates()
     {
-        string outputPath = GetGeneratedFilePath();
-        var sb = BuildHeader();
-
         string[] guids = AssetDatabase.FindAssets("t:AKLD_SOTemplate");
+        int count = 0;
+
         foreach (var guid in guids)
         {
             var path = AssetDatabase.GUIDToAssetPath(guid);
             var so = AssetDatabase.LoadAssetAtPath<AKLD_SOTemplate>(path);
-            if (so != null) AppendTemplate(sb, so);
+            if (so == null) continue;
+
+            var sb = BuildHeader();
+            AppendTemplate(sb, so);
+            var outputPath = GetGeneratedFilePath(so);
+            WriteAndImport(outputPath, sb);
+            count++;
         }
-        WriteAndImport(outputPath, sb);
+
+        Debug.Log($"[AKLD] Generated autocomplete for {count} template(s) in /Generated.");
     }
 
     [MenuItem("Tools/AKLD/Generate Autocomplete (Selection)")]
@@ -68,14 +74,16 @@ public static class AKLD_SOTemplate_Generator
             Debug.LogWarning("[AKLD] Select an AKLD_SOTemplate asset to generate from.");
             return;
         }
-        string outputPath = GetGeneratedFilePath();
+
         var sb = BuildHeader();
         AppendTemplate(sb, so);
+        var outputPath = GetGeneratedFilePath(so);
         WriteAndImport(outputPath, sb);
+        Debug.Log($"[AKLD] Autocomplete generated for '{so.name}' at: {outputPath}");
     }
 
     // ───────────────────────────────────────────────
-    // Output: .../Scripts/Generated/AKLD_SOTemplate_Auto.cs
+    // Output: .../Scripts/Generated/AKLD_SOTemplate_<TemplateName>_Auto.cs
     // ───────────────────────────────────────────────
     private static string GetThisScriptPath()
     {
@@ -97,6 +105,7 @@ public static class AKLD_SOTemplate_Generator
         }
     }
 
+    // Mantengo el método original por compat (no se usa en este flujo nuevo).
     private static string GetGeneratedFilePath()
     {
         // …/Scripts/Editor/AKLD_SOTemplate_Generator.cs -> …/Scripts/Generated/AKLD_SOTemplate_Auto.cs
@@ -109,6 +118,22 @@ public static class AKLD_SOTemplate_Generator
         var genDir = $"{scriptsDir}/Generated";
         CreateFolderRecursive(genDir);
         return $"{genDir}/AKLD_SOTemplate_Auto.cs";
+    }
+
+    // NUEVO: path por template (cambio mínimo para permitir múltiples archivos)
+    private static string GetGeneratedFilePath(AKLD_SOTemplate so)
+    {
+        var scriptPath = GetThisScriptPath();
+        if (string.IsNullOrEmpty(scriptPath))
+            scriptPath = "Assets/WwiseToolsLD/Scripts/Editor/AKLD_SOTemplate_Generator.cs"; // fallback
+
+        var editorDir = Path.GetDirectoryName(scriptPath).Replace("\\", "/");
+        var scriptsDir = Path.GetDirectoryName(editorDir).Replace("\\", "/");
+        var genDir = $"{scriptsDir}/Generated";
+        CreateFolderRecursive(genDir);
+
+        var safe = SanitizeIdentifier(so.name);
+        return $"{genDir}/AKLD_SOTemplate_{safe}_Auto.cs";
     }
 
     // ───────────────────────────────────────────────
@@ -190,7 +215,7 @@ public static class AKLD_SOTemplate_Generator
     private static string SanitizeIdentifier(string name)
     {
         var id = Regex.Replace(name.Trim(), @"[^a-zA-Z0-9_]", "_");
-        if (Regex.IsMatch(id, @"^\\d")) id = "_" + id;
+        if (Regex.IsMatch(id, @"^\d")) id = "_" + id; // FIX: ^\d (antes \\d)
         if (string.IsNullOrEmpty(id)) id = "Unnamed";
         return id;
     }

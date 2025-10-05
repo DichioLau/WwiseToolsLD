@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{767F0F33-1606-6E7F-989D-0C85DDDE4E6A}",
+    "Hash": "{3E0EEFD8-CDFE-13D7-35E1-2DB26604FAEE}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -63,6 +63,12 @@
       "Color": "11"
      },
      {
+      "Id": "454654130",
+      "Name": "OBCHECK",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\8 OBJ\\OBCHECK",
+      "GUID": "{512185F4-91EB-4D16-9CCB-07D611B1E4A5}"
+     },
+     {
       "Id": "837114063",
       "Name": "AKLD_HEART_BEAT",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\HeartBeat\\AKLD_HEART_BEAT",
@@ -75,6 +81,18 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\HeartBeat\\AKLD_HEART",
       "GUID": "{49838DEA-47C0-4BBC-A8FA-858EB63384B3}",
       "Color": "3"
+     },
+     {
+      "Id": "1730564736",
+      "Name": "MusicB",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\6 Distance\\MusicB",
+      "GUID": "{E2805886-FCFD-44A4-99F9-4EF875943C6D}"
+     },
+     {
+      "Id": "1730564739",
+      "Name": "MusicA",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\6 Distance\\MusicA",
+      "GUID": "{54573DBC-A5C2-4EDA-A712-85F80FEBC0BD}"
      },
      {
       "Id": "1822586097",
@@ -169,6 +187,6 @@
     ]
    }
   ],
-  "FileHash": "{ACA97B68-60BF-CC5E-B266-409D4E9EBDC2}"
+  "FileHash": "{E7EB9391-8CF8-2AA5-C7FA-0E648DCC6D30}"
  }
 }

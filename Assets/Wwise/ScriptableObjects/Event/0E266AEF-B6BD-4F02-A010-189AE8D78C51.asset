@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e78fcc535b673f49baa57ef4b894424, type: 3}
+  m_Name: 0E266AEF-B6BD-4F02-A010-189AE8D78C51
+  m_EditorClassIdentifier: 
+  objectName: Play_Vertical_Interchange_SW_TIMERB
+  id: 3376261752
+  guid: 0E266AEF-B6BD-4F02-A010-189AE8D78C51
+  IsInUserDefinedSoundBank: 1
